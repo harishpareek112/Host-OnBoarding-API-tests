@@ -1,0 +1,7 @@
+com\gamepe\tests\ResendOtpTest.class
+com\gamepe\utils\TestLogger.class
+com\gamepe\tests\SendOtpTest.class
+com\gamepe\config\Config.class
+com\gamepe\tests\SignUpTest.class
+com\gamepe\tests\VerifyOtpTest.class
+com\gamepe\base\BaseTest.class

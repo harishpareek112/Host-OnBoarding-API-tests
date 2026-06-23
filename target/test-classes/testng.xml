@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GamePe Auth API Test Suite" verbose="2">
+
+    <test name="Sign Up Tests">
+        <classes>
+            <class name="com.gamepe.tests.SignUpTest"/>
+        </classes>
+    </test>
+
+    <test name="Send OTP Tests">
+        <classes>
+            <class name="com.gamepe.tests.SendOtpTest"/>
+        </classes>
+    </test>
+
+    <test name="Verify OTP Tests">
+        <classes>
+            <class name="com.gamepe.tests.VerifyOtpTest"/>
+        </classes>
+    </test>
+
+    <test name="Resend OTP Tests">
+        <classes>
+            <class name="com.gamepe.tests.ResendOtpTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,1599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="14.319" tests="16" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Arun\Downloads\gamepe-api-tests (1)\gamepe-api-tests\target\test-classes;C:\Users\Arun\Downloads\gamepe-api-tests (1)\gamepe-api-tests\target\classes;C:\Users\Arun\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\Arun\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\Arun\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\Arun\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Arun\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Arun\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Arun\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Arun\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Arun\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Arun\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Arun\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\Arun\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\Arun\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\Arun\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\Arun\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Arun\.m2\repository\io\rest-assured\json-schema-validator\5.4.0\json-schema-validator-5.4.0.jar;C:\Users\Arun\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Arun\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Arun\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Arun\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Arun\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Arun\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Arun\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Arun\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Arun\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Arun\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Arun\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Arun\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Arun\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Arun\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\Arun\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Arun\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Arun\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Arun\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Arun\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Arun\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\Arun\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Arun\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Arun\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\Arun\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\Arun\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\Arun\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\Arun\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.16.1\jackson-databind-2.16.1.jar;C:\Users\Arun\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.16.1\jackson-annotations-2.16.1.jar;C:\Users\Arun\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.16.1\jackson-core-2.16.1.jar;C:\Users\Arun\.m2\repository\org\slf4j\slf4j-api\2.0.11\slf4j-api-2.0.11.jar;C:\Users\Arun\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\Arun\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\Arun\AppData\Local\Temp\surefire3617494753412788681\surefirebooter-20260623115956516_3.jar C:\Users\Arun\AppData\Local\Temp\surefire3617494753412788681 2026-06-23T11-59-56_323-jvmRun1 surefire-20260623115956516_1tmp surefire_0-20260623115956516_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Arun\Downloads\gamepe-api-tests (1)\gamepe-api-tests\target\test-classes;C:\Users\Arun\Downloads\gamepe-api-tests (1)\gamepe-api-tests\target\classes;C:\Users\Arun\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\Arun\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\Arun\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\Arun\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Arun\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Arun\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Arun\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Arun\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Arun\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Arun\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Arun\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\Arun\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\Arun\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\Arun\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\Arun\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Arun\.m2\repository\io\rest-assured\json-schema-validator\5.4.0\json-schema-validator-5.4.0.jar;C:\Users\Arun\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Arun\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Arun\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Arun\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Arun\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Arun\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Arun\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Arun\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Arun\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Arun\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Arun\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Arun\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Arun\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Arun\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\Arun\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Arun\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Arun\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Arun\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Arun\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Arun\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\Arun\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Arun\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Arun\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\Arun\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\Arun\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\Arun\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\Arun\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.16.1\jackson-databind-2.16.1.jar;C:\Users\Arun\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.16.1\jackson-annotations-2.16.1.jar;C:\Users\Arun\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.16.1\jackson-core-2.16.1.jar;C:\Users\Arun\.m2\repository\org\slf4j\slf4j-api\2.0.11\slf4j-api-2.0.11.jar;C:\Users\Arun\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\Arun\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Arun"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Arun\Downloads\gamepe-api-tests (1)\gamepe-api-tests"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Arun\AppData\Local\Temp\surefire3617494753412788681\surefirebooter-20260623115956516_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.18+8"/>
+    <property name="user.name" value="Arun"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.18+8"/>
+    <property name="localRepository" value="C:\Users\Arun\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\Arun\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.18"/>
+    <property name="user.dir" value="C:\Users\Arun\Downloads\gamepe-api-tests (1)\gamepe-api-tests"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\Arun\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Arun\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\bin;C:\Python312\Scripts\;C:\Python312\;C:\Program Files\Python311\Scripts\;C:\Program Files\Python311\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\CrSSL\bin;C:\Program Files (x86)\dotnet\;C:\MinGW\bin;C:\ProgramData\chocolatey\bin;C:\php-8.3.13;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\maven\apache-maven-3.9.14\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\Arun\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\Arun\.dotnet\tools;C:\Users\Arun\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Arun\AppData\Local\GitHubDesktop\bin;C:\ProgramData\Arun\GitHubDesktop\bin;C:\Users\Arun\AppData\Roaming\npm;C:\Users\Arun\AppData\Local\Programs\Antigravity\bin;E:\Program Files\IntelliJ IDEA 2026.1.3\bin;c:\Users\Arun\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.18+8"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="tc01_signUp_validMobile_shouldReturn200Or201" classname="com.gamepe.tests.SignUpTest" time="4.727">
+    <system-out><![CDATA[...
+... TestNG 7.9.0 by Cédric Beust (cedric@beust.com)
+...
+
+11:59:59.787 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????????
+11:59:59.787 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?      GamePe Auth API Test Suite - STARTING       ?
+11:59:59.787 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????????
+11:59:59.787 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+11:59:59.802 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Mobile No.  : 9876543210
+11:59:59.802 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Correct OTP : 0000
+11:59:59.802 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Wrong OTP   : 1234
+11:59:59.802 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ??????????????????????????????????????????????????
+12:00:01.572 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? RestAssured initialized successfully
+12:00:01.599 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:01.599 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc01_signUp_validMobile_shouldReturn200Or201
+12:00:01.599 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:01.809 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ? REQUEST
+12:00:01.809 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Method : POST
+12:00:01.809 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+12:00:01.809 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Body   : {mobile_number=9876543210}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile_number": "9876543210"
+}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"b0-I0shy1MBqedDZoCYLAD9qEvQrg0"
+vary: Accept-Encoding
+x-cloud-trace-context: 6e82dfe9ed8c7ffc9d0ae805b6739fca;o=1
+date: Tue, 23 Jun 2026 06:30:04 GMT
+server: Google Frontend
+Content-Length: 176
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": true,
+    "message": "Player registered successfully or already exists.",
+    "data": {
+        "player_id": 11254690,
+        "wallet_id": 9736515,
+        "already_logged_in": true,
+        "workspace_id": "62642"
+    }
+}
+12:00:06.261 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ? Captured PLAYER_ID: 11254690
+12:00:06.339 &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ?? Failed to extract player_id or workspace_id: class java.lang.String cannot be cast to class [C (java.lang.String and [C are in module java.base of loader 'bootstrap')
+12:00:06.339 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ? RESPONSE
+12:00:06.339 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Status  : 200
+12:00:06.339 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Time    : 1642 ms
+12:00:06.339 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Body    : {"success":true,"message":"Player registered successfully or already exists.","data":{"player_id":11254690,"wallet_id":9736515,"already_logged_in":true,"workspace_id":"62642"}}
+12:00:06.339 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ? Note: 409 = user already exists (acceptable on preprod)
+]]></system-out>
+  </testcase>
+  <testcase name="tc02_signUp_emptyMobile_shouldReturn400Or422" classname="com.gamepe.tests.SignUpTest" time="0.245">
+    <system-out><![CDATA[12:00:06.383 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? TEST PASSED  : tc01_signUp_validMobile_shouldReturn200Or201
+12:00:06.384 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?????????????????????????????????????????????????
+12:00:06.395 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:06.396 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc02_signUp_emptyMobile_shouldReturn400Or422
+12:00:06.397 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:06.404 &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ??  Sending EMPTY mobile_number — expecting 400/422
+12:00:06.405 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ? REQUEST
+12:00:06.406 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Method : POST
+12:00:06.407 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+12:00:06.407 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Body   : {mobile_number=}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile_number": ""
+}
+HTTP/1.1 400 Bad Request
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"3e-gJkPDQhPJ5Vwa18jLbEyHMt9MmI"
+vary: Accept-Encoding
+x-cloud-trace-context: 3c17770ded05d9fbd76ba1a4ace4bf01
+date: Tue, 23 Jun 2026 06:30:06 GMT
+server: Google Frontend
+Content-Length: 62
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": false,
+    "message": "Phone number not valid",
+    "data": {
+        
+    }
+}
+12:00:06.714 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ? RESPONSE
+12:00:06.714 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Status  : 400
+12:00:06.714 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Time    : 272 ms
+12:00:06.714 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Body    : {"success":false,"message":"Phone number not valid","data":{}}
+]]></system-out>
+  </testcase>
+  <testcase name="tc03_signUp_shortMobile_shouldReturn400Or422" classname="com.gamepe.tests.SignUpTest" time="0.349">
+    <system-out><![CDATA[12:00:06.730 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? TEST PASSED  : tc02_signUp_emptyMobile_shouldReturn400Or422
+12:00:06.730 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?????????????????????????????????????????????????
+12:00:06.730 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:06.730 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc03_signUp_shortMobile_shouldReturn400Or422
+12:00:06.730 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:06.745 &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ??  Sending SHORT mobile '98765' — expecting 400/422
+12:00:06.749 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ? REQUEST
+12:00:06.749 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Method : POST
+12:00:06.749 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+12:00:06.750 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Body   : {mobile_number=98765}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile_number": "98765"
+}
+HTTP/1.1 400 Bad Request
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"3e-gJkPDQhPJ5Vwa18jLbEyHMt9MmI"
+vary: Accept-Encoding
+x-cloud-trace-context: 281be5edb25c720a4f64f783fb5fb6a0
+date: Tue, 23 Jun 2026 06:30:06 GMT
+server: Google Frontend
+Content-Length: 62
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": false,
+    "message": "Phone number not valid",
+    "data": {
+        
+    }
+}
+12:00:07.079 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ? RESPONSE
+12:00:07.080 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Status  : 400
+12:00:07.080 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Time    : 297 ms
+12:00:07.080 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Body    : {"success":false,"message":"Phone number not valid","data":{}}
+]]></system-out>
+  </testcase>
+  <testcase name="tc04_signUp_alphaInMobile_shouldReturn400Or422" classname="com.gamepe.tests.SignUpTest" time="0.399">
+    <failure message="1 expectation failed.&#10;Expected status code (is &lt;400&gt; or is &lt;422&gt;) but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code (is <400> or is <422>) but was <200>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at com.gamepe.tests.SignUpTest.tc04_signUp_alphaInMobile_shouldReturn400Or422(SignUpTest.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[12:00:07.084 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? TEST PASSED  : tc03_signUp_shortMobile_shouldReturn400Or422
+12:00:07.087 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?????????????????????????????????????????????????
+12:00:07.094 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:07.094 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc04_signUp_alphaInMobile_shouldReturn400Or422
+12:00:07.095 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:07.105 &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ??  Sending ALPHA mobile '98765ABCDE' — expecting 400/422
+12:00:07.107 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ? REQUEST
+12:00:07.107 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Method : POST
+12:00:07.107 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+12:00:07.107 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Body   : {mobile_number=98765ABCDE}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "mobile_number": "98765ABCDE"
+}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"ae-AqReFoFkElhvnMtwXTWFeos5Li8"
+vary: Accept-Encoding
+x-cloud-trace-context: 58f9aa547aa211a2bced99be62be1c99
+date: Tue, 23 Jun 2026 06:30:07 GMT
+server: Google Frontend
+Content-Length: 174
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": true,
+    "message": "Player registered successfully or already exists.",
+    "data": {
+        "player_id": 11257671,
+        "wallet_id": null,
+        "already_logged_in": false,
+        "workspace_id": "62642"
+    }
+}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"ae-AqReFoFkElhvnMtwXTWFeos5Li8"
+vary: Accept-Encoding
+x-cloud-trace-context: 58f9aa547aa211a2bced99be62be1c99
+date: Tue, 23 Jun 2026 06:30:07 GMT
+server: Google Frontend
+Content-Length: 174
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": true,
+    "message": "Player registered successfully or already exists.",
+    "data": {
+        "player_id": 11257671,
+        "wallet_id": null,
+        "already_logged_in": false,
+        "workspace_id": "62642"
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="tc05_signUp_emptyBody_shouldReturn400Or422" classname="com.gamepe.tests.SignUpTest" time="0.445">
+    <system-out><![CDATA[12:00:07.518 &amp#27;[1;31mERROR&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? TEST FAILED  : tc04_signUp_alphaInMobile_shouldReturn400Or422
+12:00:07.519 &amp#27;[1;31mERROR&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m -    Reason       : 1 expectation failed.
+Expected status code (is <400> or is <422>) but was <200>.
+
+12:00:07.520 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?????????????????????????????????????????????????
+12:00:07.538 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:07.540 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc05_signUp_emptyBody_shouldReturn400Or422
+12:00:07.540 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:07.543 &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ??  Sending EMPTY body {{}} — expecting 400/422
+12:00:07.543 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ? REQUEST
+12:00:07.543 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Method : POST
+12:00:07.556 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+12:00:07.556 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Body   : {}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    
+}
+HTTP/1.1 400 Bad Request
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"3e-gJkPDQhPJ5Vwa18jLbEyHMt9MmI"
+vary: Accept-Encoding
+x-cloud-trace-context: 5c037ad342a3988cc131409a14cde69d
+date: Tue, 23 Jun 2026 06:30:07 GMT
+server: Google Frontend
+Content-Length: 62
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": false,
+    "message": "Phone number not valid",
+    "data": {
+        
+    }
+}
+12:00:07.988 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m - ? RESPONSE
+12:00:07.988 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Status  : 400
+12:00:07.988 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Time    : 404 ms
+12:00:07.988 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.tests.SignUpTest&amp#27;[0;39m -    Body    : {"success":false,"message":"Phone number not valid","data":{}}
+]]></system-out>
+  </testcase>
+  <testcase name="tc01_sendOtp_validMobile_shouldReturn200" classname="com.gamepe.tests.SendOtpTest" time="0.437">
+    <system-out><![CDATA[12:00:07.988 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? TEST PASSED  : tc05_signUp_emptyBody_shouldReturn400Or422
+12:00:07.988 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?????????????????????????????????????????????????
+12:00:08.046 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????????
+12:00:08.046 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?      GamePe Auth API Test Suite - STARTING       ?
+12:00:08.046 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????????
+12:00:08.046 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+12:00:08.046 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Mobile No.  : 9876543210
+12:00:08.046 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Correct OTP : 0000
+12:00:08.046 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Wrong OTP   : 1234
+12:00:08.046 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ??????????????????????????????????????????????????
+12:00:08.046 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? RestAssured initialized successfully
+12:00:08.046 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:08.046 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc01_sendOtp_validMobile_shouldReturn200
+12:00:08.046 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:08.058 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m - ? Sending OTP to registered mobile: 9876543210
+12:00:08.058 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m - ? REQUEST
+12:00:08.058 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    Method : POST
+12:00:08.058 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+12:00:08.058 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "player_id": "11254690",
+    "device_id": "30685769ebafdd1a",
+    "web_login": "",
+    "mobile_number": "9876543210",
+    "otp_hash": ""
+}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"3d-QHxyxo1E/+FcKir3WRe2IRfkxp4"
+vary: Accept-Encoding
+x-cloud-trace-context: 8166db01a123b9c9a5b89537148ed963
+date: Tue, 23 Jun 2026 06:30:08 GMT
+server: Google Frontend
+Content-Length: 61
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": true,
+    "message": "OTP sent successfully.",
+    "data": {
+        
+    }
+}
+12:00:08.483 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m - ? RESPONSE
+12:00:08.483 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    Status  : 200
+12:00:08.483 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    Time    : 381 ms
+12:00:08.483 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+12:00:08.483 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m - ? OTP successfully triggered for mobile: 9876543210
+]]></system-out>
+  </testcase>
+  <testcase name="tc02_sendOtp_unregisteredMobile_shouldReturn400Or404" classname="com.gamepe.tests.SendOtpTest" time="0.296">
+    <system-out><![CDATA[12:00:08.490 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? TEST PASSED  : tc01_sendOtp_validMobile_shouldReturn200
+12:00:08.491 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?????????????????????????????????????????????????
+12:00:08.504 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:08.504 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc02_sendOtp_unregisteredMobile_shouldReturn400Or404
+12:00:08.504 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:08.508 &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m - ??  Sending OTP to UNREGISTERED mobile: 0000000000 — expecting 400/404
+12:00:08.509 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m - ? REQUEST
+12:00:08.509 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    Method : POST
+12:00:08.509 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+12:00:08.510 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=0000000000, otp_hash=}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "player_id": "11254690",
+    "device_id": "30685769ebafdd1a",
+    "web_login": "",
+    "mobile_number": "0000000000",
+    "otp_hash": ""
+}
+HTTP/1.1 400 Bad Request
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"3b-ZV2eZmmDgGs2R0JxrvFw4ImRyGc"
+vary: Accept-Encoding
+x-cloud-trace-context: 8b5c800133f3b1d69882a04d3015f5f8
+date: Tue, 23 Jun 2026 06:30:08 GMT
+server: Google Frontend
+Content-Length: 59
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": false,
+    "message": "Failed to send OTP.",
+    "data": {
+        
+    }
+}
+12:00:08.803 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m - ? RESPONSE
+12:00:08.803 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    Status  : 400
+12:00:08.803 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    Time    : 278 ms
+12:00:08.803 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    Body    : {"success":false,"message":"Failed to send OTP.","data":{}}
+]]></system-out>
+  </testcase>
+  <testcase name="tc03_sendOtp_emptyMobile_shouldReturn400Or422" classname="com.gamepe.tests.SendOtpTest" time="0.307">
+    <system-out><![CDATA[12:00:08.808 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? TEST PASSED  : tc02_sendOtp_unregisteredMobile_shouldReturn400Or404
+12:00:08.808 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?????????????????????????????????????????????????
+12:00:08.810 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:08.810 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc03_sendOtp_emptyMobile_shouldReturn400Or422
+12:00:08.810 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:08.810 &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m - ??  Sending OTP with EMPTY mobile — expecting 400/422
+12:00:08.810 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m - ? REQUEST
+12:00:08.810 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    Method : POST
+12:00:08.810 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+12:00:08.810 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=, otp_hash=}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "player_id": "11254690",
+    "device_id": "30685769ebafdd1a",
+    "web_login": "",
+    "mobile_number": "",
+    "otp_hash": ""
+}
+HTTP/1.1 400 Bad Request
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"3b-ZV2eZmmDgGs2R0JxrvFw4ImRyGc"
+vary: Accept-Encoding
+x-cloud-trace-context: a00a753f0c3dc981c7ef5977eb2e433c
+date: Tue, 23 Jun 2026 06:30:08 GMT
+server: Google Frontend
+Content-Length: 59
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": false,
+    "message": "Failed to send OTP.",
+    "data": {
+        
+    }
+}
+12:00:09.117 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m - ? RESPONSE
+12:00:09.117 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    Status  : 400
+12:00:09.117 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    Time    : 285 ms
+12:00:09.117 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.SendOtpTest&amp#27;[0;39m -    Body    : {"success":false,"message":"Failed to send OTP.","data":{}}
+]]></system-out>
+  </testcase>
+  <testcase name="tc01_verifyOtp_correctOtp_shouldReturn200" classname="com.gamepe.tests.VerifyOtpTest" time="0.696">
+    <system-out><![CDATA[12:00:09.117 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? TEST PASSED  : tc03_sendOtp_emptyMobile_shouldReturn400Or422
+12:00:09.117 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?????????????????????????????????????????????????
+12:00:09.134 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????????
+12:00:09.134 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?      GamePe Auth API Test Suite - STARTING       ?
+12:00:09.135 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????????
+12:00:09.135 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+12:00:09.135 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Mobile No.  : 9876543210
+12:00:09.135 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Correct OTP : 0000
+12:00:09.135 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Wrong OTP   : 1234
+12:00:09.135 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ??????????????????????????????????????????????????
+12:00:09.138 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? RestAssured initialized successfully
+12:00:09.141 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:09.141 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc01_verifyOtp_correctOtp_shouldReturn200
+12:00:09.141 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:09.141 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? Sending OTP to mobile: 9876543210
+12:00:09.141 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? REQUEST
+12:00:09.141 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Method : POST
+12:00:09.141 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+12:00:09.141 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "player_id": "11254690",
+    "device_id": "30685769ebafdd1a",
+    "web_login": "",
+    "mobile_number": "9876543210",
+    "otp_hash": ""
+}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"3d-QHxyxo1E/+FcKir3WRe2IRfkxp4"
+vary: Accept-Encoding
+x-cloud-trace-context: 955002fe24551f77b52cdbed88caf955
+date: Tue, 23 Jun 2026 06:30:09 GMT
+server: Google Frontend
+Content-Length: 61
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": true,
+    "message": "OTP sent successfully.",
+    "data": {
+        
+    }
+}
+12:00:09.423 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? RESPONSE
+12:00:09.423 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Status  : 200
+12:00:09.423 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Time    : 272 ms
+12:00:09.423 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+12:00:09.423 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? Verifying OTP for mobile: 9876543210
+12:00:09.423 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? REQUEST
+12:00:09.423 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Method : POST
+12:00:09.423 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+12:00:09.423 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=0000, app_id=2, workspaceID=workspace-123}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "player_id": "11254690",
+    "device_id": "30685769ebafdd1a",
+    "mobile_number": "9876543210",
+    "client_otp": "0000",
+    "app_id": 2,
+    "workspaceID": "workspace-123"
+}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"5a7-MRmKXVaIUAiO1NbJQP/hD8v85NU"
+vary: Accept-Encoding
+content-encoding: gzip
+date: Tue, 23 Jun 2026 06:30:09 GMT
+server: Google Frontend
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "success": true,
+    "message": "Welcome to Tamasha! Enjoy your gaming experience.",
+    "data": {
+        "player_id": 11254690,
+        "auth_token": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3ODIxOTYyMDksImV4cCI6MTc4MjI4MjYwOX0.zSC9ktWedPKzCwgsTAT2kxf9RKUEdkh9e5EfC1KD4wk",
+        "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzgyMTk2MjA5LCJleHAiOjE3ODQ3ODgyMDl9.39bUMLGQUUSJxsyZ7htmyr6dmS7hxp5bZb9BEQxZfWE",
+        "new_user": false,
+        "freshdesk_restore_id": null,
+        "wallet_id": 9736515,
+        "first_online_transaction": true,
+        "recommendations": {
+            "show_onboarding": false,
+            "create_recommendation": false,
+            "go_home": true
+        },
+        "show_referral": false
+    }
+}
+12:00:09.754 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? RESPONSE
+12:00:09.754 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Status  : 200
+12:00:09.754 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Time    : 319 ms
+12:00:09.754 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Body    : {"success":true,"message":"Welcome to Tamasha! Enjoy your gaming experience.","data":{"player_id":11254690,"auth_token":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3ODIxOTYyMDksImV4cCI6MTc4MjI4MjYwOX0.zSC9ktWedPKzCwgsTAT2kxf9RKUEdkh9e5EfC1KD4wk","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzgyMTk2MjA5LCJleHAiOjE3ODQ3ODgyMDl9.39bUMLGQUUSJxsyZ7htmyr6dmS7hxp5bZb9BEQxZfWE","new_user":false,"freshdesk_restore_id":null,"wallet_id":9736515,"first_online_transaction":true,"recommendations":{"show_onboarding":false,"create_recommendation":false,"go_home":true},"show_referral":false}}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"5a7-MRmKXVaIUAiO1NbJQP/hD8v85NU"
+vary: Accept-Encoding
+content-encoding: gzip
+date: Tue, 23 Jun 2026 06:30:09 GMT
+server: Google Frontend
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "success": true,
+    "message": "Welcome to Tamasha! Enjoy your gaming experience.",
+    "data": {
+        "player_id": 11254690,
+        "auth_token": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3ODIxOTYyMDksImV4cCI6MTc4MjI4MjYwOX0.zSC9ktWedPKzCwgsTAT2kxf9RKUEdkh9e5EfC1KD4wk",
+        "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzgyMTk2MjA5LCJleHAiOjE3ODQ3ODgyMDl9.39bUMLGQUUSJxsyZ7htmyr6dmS7hxp5bZb9BEQxZfWE",
+        "new_user": false,
+        "freshdesk_restore_id": null,
+        "wallet_id": 9736515,
+        "first_online_transaction": true,
+        "recommendations": {
+            "show_onboarding": false,
+            "create_recommendation": false,
+            "go_home": true
+        },
+        "show_referral": false
+    }
+}
+12:00:09.806 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? Captured AUTH_TOKEN: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3ODIxOTYyMDksImV4cCI6MTc4MjI4MjYwOX0.zSC9ktWedPKzCwgsTAT2kxf9RKUEdkh9e5EfC1KD4wk
+12:00:09.806 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? RESPONSE
+12:00:09.806 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Status  : 200
+12:00:09.806 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Time    : 319 ms
+12:00:09.806 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Body    : {"success":true,"message":"Welcome to Tamasha! Enjoy your gaming experience.","data":{"player_id":11254690,"auth_token":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3ODIxOTYyMDksImV4cCI6MTc4MjI4MjYwOX0.zSC9ktWedPKzCwgsTAT2kxf9RKUEdkh9e5EfC1KD4wk","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzgyMTk2MjA5LCJleHAiOjE3ODQ3ODgyMDl9.39bUMLGQUUSJxsyZ7htmyr6dmS7hxp5bZb9BEQxZfWE","new_user":false,"freshdesk_restore_id":null,"wallet_id":9736515,"first_online_transaction":true,"recommendations":{"show_onboarding":false,"create_recommendation":false,"go_home":true},"show_referral":false}}
+12:00:09.806 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? Correct OTP verified successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc02_verifyOtp_wrongOtp_shouldNotReturn200" classname="com.gamepe.tests.VerifyOtpTest" time="0.238">
+    <system-out><![CDATA[12:00:09.816 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? TEST PASSED  : tc01_verifyOtp_correctOtp_shouldReturn200
+12:00:09.816 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?????????????????????????????????????????????????
+12:00:09.823 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:09.823 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+12:00:09.823 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:09.830 &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? SECURITY TEST: Verifying WRONG OTP '1234' — must NOT return 200!
+12:00:09.831 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? REQUEST
+12:00:09.831 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Method : POST
+12:00:09.831 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+12:00:09.831 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=1234, app_id=2, workspaceID=workspace-123}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "player_id": "11254690",
+    "device_id": "30685769ebafdd1a",
+    "mobile_number": "9876543210",
+    "client_otp": "1234",
+    "app_id": 2,
+    "workspaceID": "workspace-123"
+}
+HTTP/1.1 400 Bad Request
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"33-0J93KJoaCipfGnIWj2MhNqnZPZQ"
+vary: Accept-Encoding
+x-cloud-trace-context: 292544ccde3d1104f1758e2dde1b4881
+date: Tue, 23 Jun 2026 06:30:09 GMT
+server: Google Frontend
+Content-Length: 51
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": false,
+    "message": "OTP invalid",
+    "data": {
+        
+    }
+}
+12:00:10.094 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? RESPONSE
+12:00:10.094 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Status  : 400
+12:00:10.094 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Time    : 243 ms
+12:00:10.094 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+12:00:10.094 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? Wrong OTP correctly rejected with status: 400
+]]></system-out>
+  </testcase>
+  <testcase name="tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422" classname="com.gamepe.tests.VerifyOtpTest" time="0.23">
+    <system-out><![CDATA[12:00:10.098 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? TEST PASSED  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+12:00:10.098 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?????????????????????????????????????????????????
+12:00:10.098 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:10.098 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+12:00:10.098 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:10.106 &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ??  Sending NON-NUMERIC OTP 'ABCD' — expecting 400/401/422
+12:00:10.107 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? REQUEST
+12:00:10.107 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Method : POST
+12:00:10.107 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+12:00:10.107 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=ABCD, app_id=2, workspaceID=workspace-123}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "player_id": "11254690",
+    "device_id": "30685769ebafdd1a",
+    "mobile_number": "9876543210",
+    "client_otp": "ABCD",
+    "app_id": 2,
+    "workspaceID": "workspace-123"
+}
+HTTP/1.1 400 Bad Request
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"33-0J93KJoaCipfGnIWj2MhNqnZPZQ"
+vary: Accept-Encoding
+x-cloud-trace-context: d1961c8b7e13fc4fafece349abcfc6b7
+date: Tue, 23 Jun 2026 06:30:10 GMT
+server: Google Frontend
+Content-Length: 51
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": false,
+    "message": "OTP invalid",
+    "data": {
+        
+    }
+}
+12:00:10.336 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? RESPONSE
+12:00:10.336 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Status  : 400
+12:00:10.336 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Time    : 221 ms
+12:00:10.336 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+]]></system-out>
+  </testcase>
+  <testcase name="tc04_verifyOtp_emptyOtp_shouldReturn400Or422" classname="com.gamepe.tests.VerifyOtpTest" time="0.276">
+    <system-out><![CDATA[12:00:10.336 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? TEST PASSED  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+12:00:10.336 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?????????????????????????????????????????????????
+12:00:10.346 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:10.346 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+12:00:10.346 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:10.350 &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ??  Sending EMPTY OTP — expecting 400/401/422
+12:00:10.351 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? REQUEST
+12:00:10.351 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Method : POST
+12:00:10.351 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+12:00:10.351 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=, app_id=2, workspaceID=workspace-123}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "player_id": "11254690",
+    "device_id": "30685769ebafdd1a",
+    "mobile_number": "9876543210",
+    "client_otp": "",
+    "app_id": 2,
+    "workspaceID": "workspace-123"
+}
+HTTP/1.1 400 Bad Request
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"33-0J93KJoaCipfGnIWj2MhNqnZPZQ"
+vary: Accept-Encoding
+x-cloud-trace-context: 6ba1612f569aecfb4776a04786665705
+date: Tue, 23 Jun 2026 06:30:10 GMT
+server: Google Frontend
+Content-Length: 51
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": false,
+    "message": "OTP invalid",
+    "data": {
+        
+    }
+}
+12:00:10.623 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? RESPONSE
+12:00:10.624 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Status  : 400
+12:00:10.624 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Time    : 259 ms
+12:00:10.624 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+]]></system-out>
+  </testcase>
+  <testcase name="tc05_verifyOtp_emptyBody_shouldReturn400Or422" classname="com.gamepe.tests.VerifyOtpTest" time="0.224">
+    <failure message="1 expectation failed.&#10;Expected status code (is &lt;400&gt; or is &lt;422&gt;) but was &lt;405&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code (is <400> or is <422>) but was <405>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor102.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at com.gamepe.tests.VerifyOtpTest.tc05_verifyOtp_emptyBody_shouldReturn400Or422(VerifyOtpTest.java:256)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[12:00:10.626 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? TEST PASSED  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+12:00:10.627 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?????????????????????????????????????????????????
+12:00:10.630 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:10.630 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+12:00:10.630 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:10.633 &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ??  Sending EMPTY body {{}} to verify endpoint — expecting 400/422
+12:00:10.633 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m - ? REQUEST
+12:00:10.633 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Method : POST
+12:00:10.634 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+12:00:10.634 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.VerifyOtpTest&amp#27;[0;39m -    Body   : {}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    
+}
+HTTP/1.1 405 Method Not Allowed
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"3f-iI7E+p+4gY1fxhiEf3CA2SuJ/I0"
+vary: Accept-Encoding
+x-cloud-trace-context: 01083881371dd7ad960d19dd659af9dd
+date: Tue, 23 Jun 2026 06:30:10 GMT
+server: Google Frontend
+Content-Length: 63
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": false,
+    "message": "Invalid input provided.",
+    "data": {
+        
+    }
+}
+HTTP/1.1 405 Method Not Allowed
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"3f-iI7E+p+4gY1fxhiEf3CA2SuJ/I0"
+vary: Accept-Encoding
+x-cloud-trace-context: 01083881371dd7ad960d19dd659af9dd
+date: Tue, 23 Jun 2026 06:30:10 GMT
+server: Google Frontend
+Content-Length: 63
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": false,
+    "message": "Invalid input provided.",
+    "data": {
+        
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="tc01_resendOtp_validMobile_shouldReturn200Or429" classname="com.gamepe.tests.ResendOtpTest" time="0.311">
+    <system-out><![CDATA[12:00:10.857 &amp#27;[1;31mERROR&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? TEST FAILED  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+12:00:10.857 &amp#27;[1;31mERROR&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m -    Reason       : 1 expectation failed.
+Expected status code (is <400> or is <422>) but was <405>.
+
+12:00:10.857 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?????????????????????????????????????????????????
+12:00:10.873 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????????
+12:00:10.873 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?      GamePe Auth API Test Suite - STARTING       ?
+12:00:10.873 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????????
+12:00:10.873 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+12:00:10.873 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Mobile No.  : 9876543210
+12:00:10.873 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Correct OTP : 0000
+12:00:10.873 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? Wrong OTP   : 1234
+12:00:10.874 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ??????????????????????????????????????????????????
+12:00:10.876 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? RestAssured initialized successfully
+12:00:10.877 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:10.877 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc01_resendOtp_validMobile_shouldReturn200Or429
+12:00:10.877 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:10.881 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m - ? Resending OTP to mobile: 9876543210
+12:00:10.882 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m - ? REQUEST
+12:00:10.882 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    Method : POST
+12:00:10.882 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/resend
+12:00:10.882 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/resend
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "player_id": "11254690",
+    "device_id": "30685769ebafdd1a",
+    "web_login": "",
+    "mobile_number": "9876543210",
+    "otp_hash": ""
+}
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"3d-QHxyxo1E/+FcKir3WRe2IRfkxp4"
+vary: Accept-Encoding
+x-cloud-trace-context: 858e1906e2f9f0f08a386464c9784e8d
+date: Tue, 23 Jun 2026 06:30:11 GMT
+server: Google Frontend
+Content-Length: 61
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": true,
+    "message": "OTP sent successfully.",
+    "data": {
+        
+    }
+}
+12:00:11.199 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m - ? RESPONSE
+12:00:11.199 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    Status  : 200
+12:00:11.199 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    Time    : 310 ms
+12:00:11.199 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+12:00:11.199 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m - ? OTP resent successfully
+]]></system-out>
+  </testcase>
+  <testcase name="tc02_resendOtp_unregisteredMobile_shouldReturn400Or404" classname="com.gamepe.tests.ResendOtpTest" time="0.27">
+    <system-out><![CDATA[12:00:11.199 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? TEST PASSED  : tc01_resendOtp_validMobile_shouldReturn200Or429
+12:00:11.199 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?????????????????????????????????????????????????
+12:00:11.208 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:11.208 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc02_resendOtp_unregisteredMobile_shouldReturn400Or404
+12:00:11.208 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:11.212 &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m - ??  Resend to UNREGISTERED mobile: 0000000000 — expecting 400/404
+12:00:11.214 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m - ? REQUEST
+12:00:11.214 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    Method : POST
+12:00:11.214 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/resend
+12:00:11.214 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=0000000000, otp_hash=}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/resend
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "player_id": "11254690",
+    "device_id": "30685769ebafdd1a",
+    "web_login": "",
+    "mobile_number": "0000000000",
+    "otp_hash": ""
+}
+HTTP/1.1 400 Bad Request
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"3b-ZV2eZmmDgGs2R0JxrvFw4ImRyGc"
+vary: Accept-Encoding
+x-cloud-trace-context: d20d3013ea58dbc390637914d6a76da0
+date: Tue, 23 Jun 2026 06:30:11 GMT
+server: Google Frontend
+Content-Length: 59
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": false,
+    "message": "Failed to send OTP.",
+    "data": {
+        
+    }
+}
+12:00:11.464 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m - ? RESPONSE
+12:00:11.464 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    Status  : 400
+12:00:11.464 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    Time    : 240 ms
+12:00:11.464 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    Body    : {"success":false,"message":"Failed to send OTP.","data":{}}
+]]></system-out>
+  </testcase>
+  <testcase name="tc03_resendOtp_emptyMobile_shouldReturn400Or422" classname="com.gamepe.tests.ResendOtpTest" time="0.254">
+    <system-out><![CDATA[12:00:11.482 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ? TEST PASSED  : tc02_resendOtp_unregisteredMobile_shouldReturn400Or404
+12:00:11.482 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?????????????????????????????????????????????????
+12:00:11.483 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:11.483 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ?  TEST START  : tc03_resendOtp_emptyMobile_shouldReturn400Or422
+12:00:11.483 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.base.BaseTest&amp#27;[0;39m - ????????????????????????????????????????????????
+12:00:11.483 &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m - ??  Resend with EMPTY mobile — expecting 400/422
+12:00:11.491 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m - ? REQUEST
+12:00:11.491 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    Method : POST
+12:00:11.491 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/resend
+12:00:11.491 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=, otp_hash=}
+Request method:	POST
+Request URI:	https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/resend
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				platform=Android
+				workspace_id=62642
+				x-app-secret-key=2
+				x-app-version=300
+				x-app-build-type=debug
+				x-app-type=playStore
+				origin=https://host-onboarding-preprod.web.app
+				referer=https://host-onboarding-preprod.web.app/
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "player_id": "11254690",
+    "device_id": "30685769ebafdd1a",
+    "web_login": "",
+    "mobile_number": "",
+    "otp_hash": ""
+}
+HTTP/1.1 400 Bad Request
+access-control-allow-origin: *
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+content-type: application/json; charset=utf-8
+etag: W/"3b-ZV2eZmmDgGs2R0JxrvFw4ImRyGc"
+vary: Accept-Encoding
+x-cloud-trace-context: 37f6e88b2d18e90eeca6db3e8fe5ba9b
+date: Tue, 23 Jun 2026 06:30:11 GMT
+server: Google Frontend
+Content-Length: 59
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "success": false,
+    "message": "Failed to send OTP.",
+    "data": {
+        
+    }
+}
+12:00:11.746 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m - ? RESPONSE
+12:00:11.746 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    Status  : 400
+12:00:11.746 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    Time    : 235 ms
+12:00:11.746 &amp#27;[39mDEBUG&amp#27;[0;39m &amp#27;[36m[main]&amp#27;[0;39m &amp#27;[33mc.g.t.ResendOtpTest&amp#27;[0;39m -    Body    : {"success":false,"message":"Failed to send OTP.","data":{}}
+]]></system-out>
+  </testcase>
+</testsuite>

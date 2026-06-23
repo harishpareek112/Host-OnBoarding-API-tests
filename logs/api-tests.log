@@ -1,0 +1,1345 @@
+2026-06-23 10:59:55.440 INFO  [main] org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2026-06-23 10:59:55.698 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 10:59:55.700 INFO  [main] com.gamepe.base.BaseTest - ║      GamePe Auth API Test Suite - STARTING       ║
+2026-06-23 10:59:55.701 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 10:59:55.702 INFO  [main] com.gamepe.base.BaseTest - 🌐 Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 10:59:55.703 INFO  [main] com.gamepe.base.BaseTest - 📱 Mobile No.  : 9876543210
+2026-06-23 10:59:55.704 INFO  [main] com.gamepe.base.BaseTest - 🔑 Correct OTP : 0000
+2026-06-23 10:59:55.704 INFO  [main] com.gamepe.base.BaseTest - 🚫 Wrong OTP   : 1234
+2026-06-23 10:59:55.705 INFO  [main] com.gamepe.base.BaseTest - ──────────────────────────────────────────────────
+2026-06-23 10:59:57.128 INFO  [main] com.gamepe.base.BaseTest - ✅ RestAssured initialized successfully
+2026-06-23 10:59:57.159 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 10:59:57.160 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc01_signUp_validMobile_shouldReturn200Or201
+2026-06-23 10:59:57.160 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 10:59:57.599 DEBUG [main] com.gamepe.tests.SignUpTest - 📤 REQUEST
+2026-06-23 10:59:57.600 DEBUG [main] com.gamepe.tests.SignUpTest -    Method : POST
+2026-06-23 10:59:57.600 DEBUG [main] com.gamepe.tests.SignUpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+2026-06-23 10:59:57.601 DEBUG [main] com.gamepe.tests.SignUpTest -    Body   : {mobile_number=9876543210}
+2026-06-23 11:00:04.767 INFO  [main] com.gamepe.tests.SignUpTest - 🎯 Captured PLAYER_ID: 11254690
+2026-06-23 11:00:04.810 DEBUG [main] com.gamepe.tests.SignUpTest - 📥 RESPONSE
+2026-06-23 11:00:04.811 DEBUG [main] com.gamepe.tests.SignUpTest -    Status  : 200
+2026-06-23 11:00:04.811 DEBUG [main] com.gamepe.tests.SignUpTest -    Time    : 2410 ms
+2026-06-23 11:00:04.811 DEBUG [main] com.gamepe.tests.SignUpTest -    Body    : {"success":true,"message":"Player registered successfully or already exists.","data":{"player_id":11254690,"wallet_id":9736515,"already_logged_in":true,"workspace_id":null}}
+2026-06-23 11:00:04.811 INFO  [main] com.gamepe.tests.SignUpTest - 📝 Note: 409 = user already exists (acceptable on preprod)
+2026-06-23 11:00:04.847 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc01_signUp_validMobile_shouldReturn200Or201
+2026-06-23 11:00:04.850 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:00:04.859 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:00:04.860 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc02_signUp_emptyMobile_shouldReturn400Or422
+2026-06-23 11:00:04.861 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:00:04.894 WARN  [main] com.gamepe.tests.SignUpTest - ⚠️  Sending EMPTY mobile_number — expecting 400/422
+2026-06-23 11:00:04.894 DEBUG [main] com.gamepe.tests.SignUpTest - 📤 REQUEST
+2026-06-23 11:00:04.896 DEBUG [main] com.gamepe.tests.SignUpTest -    Method : POST
+2026-06-23 11:00:04.896 DEBUG [main] com.gamepe.tests.SignUpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+2026-06-23 11:00:04.906 DEBUG [main] com.gamepe.tests.SignUpTest -    Body   : {mobile_number=}
+2026-06-23 11:00:05.293 DEBUG [main] com.gamepe.tests.SignUpTest - 📥 RESPONSE
+2026-06-23 11:00:05.293 DEBUG [main] com.gamepe.tests.SignUpTest -    Status  : 400
+2026-06-23 11:00:05.293 DEBUG [main] com.gamepe.tests.SignUpTest -    Time    : 286 ms
+2026-06-23 11:00:05.294 DEBUG [main] com.gamepe.tests.SignUpTest -    Body    : {"success":false,"message":"Phone number not valid","data":{}}
+2026-06-23 11:00:05.301 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc02_signUp_emptyMobile_shouldReturn400Or422
+2026-06-23 11:00:05.301 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:00:05.306 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:00:05.307 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc03_signUp_shortMobile_shouldReturn400Or422
+2026-06-23 11:00:05.307 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:00:05.316 WARN  [main] com.gamepe.tests.SignUpTest - ⚠️  Sending SHORT mobile '98765' — expecting 400/422
+2026-06-23 11:00:05.316 DEBUG [main] com.gamepe.tests.SignUpTest - 📤 REQUEST
+2026-06-23 11:00:05.317 DEBUG [main] com.gamepe.tests.SignUpTest -    Method : POST
+2026-06-23 11:00:05.317 DEBUG [main] com.gamepe.tests.SignUpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+2026-06-23 11:00:05.317 DEBUG [main] com.gamepe.tests.SignUpTest -    Body   : {mobile_number=98765}
+2026-06-23 11:00:05.585 DEBUG [main] com.gamepe.tests.SignUpTest - 📥 RESPONSE
+2026-06-23 11:00:05.585 DEBUG [main] com.gamepe.tests.SignUpTest -    Status  : 400
+2026-06-23 11:00:05.585 DEBUG [main] com.gamepe.tests.SignUpTest -    Time    : 230 ms
+2026-06-23 11:00:05.586 DEBUG [main] com.gamepe.tests.SignUpTest -    Body    : {"success":false,"message":"Phone number not valid","data":{}}
+2026-06-23 11:00:05.592 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc03_signUp_shortMobile_shouldReturn400Or422
+2026-06-23 11:00:05.594 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:00:05.599 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:00:05.599 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc04_signUp_alphaInMobile_shouldReturn400Or422
+2026-06-23 11:00:05.599 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:00:05.608 WARN  [main] com.gamepe.tests.SignUpTest - ⚠️  Sending ALPHA mobile '98765ABCDE' — expecting 400/422
+2026-06-23 11:00:05.609 DEBUG [main] com.gamepe.tests.SignUpTest - 📤 REQUEST
+2026-06-23 11:00:05.609 DEBUG [main] com.gamepe.tests.SignUpTest -    Method : POST
+2026-06-23 11:00:05.609 DEBUG [main] com.gamepe.tests.SignUpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+2026-06-23 11:00:05.609 DEBUG [main] com.gamepe.tests.SignUpTest -    Body   : {mobile_number=98765ABCDE}
+2026-06-23 11:00:05.969 ERROR [main] com.gamepe.base.BaseTest - ❌ TEST FAILED  : tc04_signUp_alphaInMobile_shouldReturn400Or422
+2026-06-23 11:00:05.970 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code (is <400> or is <422>) but was <200>.
+
+2026-06-23 11:00:05.970 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:00:05.977 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:00:05.977 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc05_signUp_emptyBody_shouldReturn400Or422
+2026-06-23 11:00:05.977 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:00:05.985 WARN  [main] com.gamepe.tests.SignUpTest - ⚠️  Sending EMPTY body {{}} — expecting 400/422
+2026-06-23 11:00:05.985 DEBUG [main] com.gamepe.tests.SignUpTest - 📤 REQUEST
+2026-06-23 11:00:05.985 DEBUG [main] com.gamepe.tests.SignUpTest -    Method : POST
+2026-06-23 11:00:05.986 DEBUG [main] com.gamepe.tests.SignUpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+2026-06-23 11:00:05.987 DEBUG [main] com.gamepe.tests.SignUpTest -    Body   : {}
+2026-06-23 11:00:06.265 DEBUG [main] com.gamepe.tests.SignUpTest - 📥 RESPONSE
+2026-06-23 11:00:06.265 DEBUG [main] com.gamepe.tests.SignUpTest -    Status  : 400
+2026-06-23 11:00:06.265 DEBUG [main] com.gamepe.tests.SignUpTest -    Time    : 249 ms
+2026-06-23 11:00:06.265 DEBUG [main] com.gamepe.tests.SignUpTest -    Body    : {"success":false,"message":"Phone number not valid","data":{}}
+2026-06-23 11:00:06.270 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc05_signUp_emptyBody_shouldReturn400Or422
+2026-06-23 11:00:06.271 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:00:06.288 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 11:00:06.288 INFO  [main] com.gamepe.base.BaseTest - ║       GamePe Auth API Test Suite - COMPLETE      ║
+2026-06-23 11:00:06.288 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 11:00:51.474 INFO  [main] org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2026-06-23 11:00:51.599 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 11:00:51.600 INFO  [main] com.gamepe.base.BaseTest - ║      GamePe Auth API Test Suite - STARTING       ║
+2026-06-23 11:00:51.601 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 11:00:51.602 INFO  [main] com.gamepe.base.BaseTest - 🌐 Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 11:00:51.602 INFO  [main] com.gamepe.base.BaseTest - 📱 Mobile No.  : 9876543210
+2026-06-23 11:00:51.603 INFO  [main] com.gamepe.base.BaseTest - 🔑 Correct OTP : 0000
+2026-06-23 11:00:51.603 INFO  [main] com.gamepe.base.BaseTest - 🚫 Wrong OTP   : 1234
+2026-06-23 11:00:51.603 INFO  [main] com.gamepe.base.BaseTest - ──────────────────────────────────────────────────
+2026-06-23 11:00:52.613 INFO  [main] com.gamepe.base.BaseTest - ✅ RestAssured initialized successfully
+2026-06-23 11:00:52.658 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:00:52.658 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc01_sendOtp_validMobile_shouldReturn200
+2026-06-23 11:00:52.661 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:00:52.950 INFO  [main] com.gamepe.tests.SendOtpTest - 📱 Sending OTP to registered mobile: 9876543210
+2026-06-23 11:00:52.951 DEBUG [main] com.gamepe.tests.SendOtpTest - 📤 REQUEST
+2026-06-23 11:00:52.951 DEBUG [main] com.gamepe.tests.SendOtpTest -    Method : POST
+2026-06-23 11:00:52.951 DEBUG [main] com.gamepe.tests.SendOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 11:00:52.951 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 11:00:55.767 DEBUG [main] com.gamepe.tests.SendOtpTest - 📥 RESPONSE
+2026-06-23 11:00:55.768 DEBUG [main] com.gamepe.tests.SendOtpTest -    Status  : 200
+2026-06-23 11:00:55.768 DEBUG [main] com.gamepe.tests.SendOtpTest -    Time    : 1253 ms
+2026-06-23 11:00:55.768 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 11:00:55.768 INFO  [main] com.gamepe.tests.SendOtpTest - ✅ OTP successfully triggered for mobile: 9876543210
+2026-06-23 11:00:55.792 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc01_sendOtp_validMobile_shouldReturn200
+2026-06-23 11:00:55.793 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:00:55.800 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:00:55.801 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc02_sendOtp_unregisteredMobile_shouldReturn400Or404
+2026-06-23 11:00:55.801 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:00:55.812 WARN  [main] com.gamepe.tests.SendOtpTest - ⚠️  Sending OTP to UNREGISTERED mobile: 0000000000 — expecting 400/404
+2026-06-23 11:00:55.813 DEBUG [main] com.gamepe.tests.SendOtpTest - 📤 REQUEST
+2026-06-23 11:00:55.813 DEBUG [main] com.gamepe.tests.SendOtpTest -    Method : POST
+2026-06-23 11:00:55.813 DEBUG [main] com.gamepe.tests.SendOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 11:00:55.814 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=0000000000, otp_hash=}
+2026-06-23 11:00:56.141 DEBUG [main] com.gamepe.tests.SendOtpTest - 📥 RESPONSE
+2026-06-23 11:00:56.142 DEBUG [main] com.gamepe.tests.SendOtpTest -    Status  : 400
+2026-06-23 11:00:56.142 DEBUG [main] com.gamepe.tests.SendOtpTest -    Time    : 283 ms
+2026-06-23 11:00:56.142 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body    : {"success":false,"message":"Failed to send OTP.","data":{}}
+2026-06-23 11:00:56.146 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc02_sendOtp_unregisteredMobile_shouldReturn400Or404
+2026-06-23 11:00:56.147 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:00:56.151 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:00:56.151 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc03_sendOtp_emptyMobile_shouldReturn400Or422
+2026-06-23 11:00:56.151 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:00:56.159 WARN  [main] com.gamepe.tests.SendOtpTest - ⚠️  Sending OTP with EMPTY mobile — expecting 400/422
+2026-06-23 11:00:56.159 DEBUG [main] com.gamepe.tests.SendOtpTest - 📤 REQUEST
+2026-06-23 11:00:56.159 DEBUG [main] com.gamepe.tests.SendOtpTest -    Method : POST
+2026-06-23 11:00:56.159 DEBUG [main] com.gamepe.tests.SendOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 11:00:56.159 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=, otp_hash=}
+2026-06-23 11:00:56.402 DEBUG [main] com.gamepe.tests.SendOtpTest - 📥 RESPONSE
+2026-06-23 11:00:56.402 DEBUG [main] com.gamepe.tests.SendOtpTest -    Status  : 400
+2026-06-23 11:00:56.402 DEBUG [main] com.gamepe.tests.SendOtpTest -    Time    : 214 ms
+2026-06-23 11:00:56.403 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body    : {"success":false,"message":"Failed to send OTP.","data":{}}
+2026-06-23 11:00:56.408 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc03_sendOtp_emptyMobile_shouldReturn400Or422
+2026-06-23 11:00:56.408 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:00:56.421 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 11:00:56.422 INFO  [main] com.gamepe.base.BaseTest - ║       GamePe Auth API Test Suite - COMPLETE      ║
+2026-06-23 11:00:56.422 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 11:01:31.371 INFO  [main] org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2026-06-23 11:01:31.437 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 11:01:31.438 INFO  [main] com.gamepe.base.BaseTest - ║      GamePe Auth API Test Suite - STARTING       ║
+2026-06-23 11:01:31.439 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 11:01:31.439 INFO  [main] com.gamepe.base.BaseTest - 🌐 Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 11:01:31.440 INFO  [main] com.gamepe.base.BaseTest - 📱 Mobile No.  : 9876543210
+2026-06-23 11:01:31.440 INFO  [main] com.gamepe.base.BaseTest - 🔑 Correct OTP : 0000
+2026-06-23 11:01:31.441 INFO  [main] com.gamepe.base.BaseTest - 🚫 Wrong OTP   : 1234
+2026-06-23 11:01:31.441 INFO  [main] com.gamepe.base.BaseTest - ──────────────────────────────────────────────────
+2026-06-23 11:01:32.146 INFO  [main] com.gamepe.base.BaseTest - ✅ RestAssured initialized successfully
+2026-06-23 11:01:32.191 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:01:32.191 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:01:32.191 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:01:32.444 INFO  [main] com.gamepe.tests.VerifyOtpTest - 📩 Sending OTP to mobile: 9876543210
+2026-06-23 11:01:32.444 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 11:01:32.445 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:01:32.445 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 11:01:32.446 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 11:01:34.824 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 11:01:34.824 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 11:01:34.825 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 1213 ms
+2026-06-23 11:01:34.825 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 11:01:34.826 INFO  [main] com.gamepe.tests.VerifyOtpTest - 🔑 Verifying OTP for mobile: 9876543210
+2026-06-23 11:01:34.826 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 11:01:34.827 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:01:34.827 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:01:34.827 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=0000, app_id=2, workspaceId=workspace-123}
+2026-06-23 11:01:35.125 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 11:01:35.125 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:01:35.125 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 272 ms
+2026-06-23 11:01:35.125 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"Something went wrong. Please try again.","data":{}}
+2026-06-23 11:01:35.870 ERROR [main] com.gamepe.base.BaseTest - ❌ TEST FAILED  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:01:35.872 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code <200> but was <400>.
+
+2026-06-23 11:01:35.873 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:01:35.881 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:01:35.881 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+2026-06-23 11:01:35.881 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:01:35.888 WARN  [main] com.gamepe.tests.VerifyOtpTest - 🔐 SECURITY TEST: Verifying WRONG OTP '1234' — must NOT return 200!
+2026-06-23 11:01:35.889 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 11:01:35.890 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:01:35.890 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:01:35.890 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=1234, app_id=2, workspaceId=workspace-123}
+2026-06-23 11:01:36.187 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 11:01:36.187 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:01:36.187 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 222 ms
+2026-06-23 11:01:36.187 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:01:36.188 INFO  [main] com.gamepe.tests.VerifyOtpTest - ✅ Wrong OTP correctly rejected with status: 400
+2026-06-23 11:01:36.194 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+2026-06-23 11:01:36.194 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:01:36.199 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:01:36.200 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+2026-06-23 11:01:36.200 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:01:36.207 WARN  [main] com.gamepe.tests.VerifyOtpTest - ⚠️  Sending NON-NUMERIC OTP 'ABCD' — expecting 400/401/422
+2026-06-23 11:01:36.208 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 11:01:36.208 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:01:36.208 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:01:36.208 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=ABCD, app_id=2, workspaceId=workspace-123}
+2026-06-23 11:01:36.449 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 11:01:36.449 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:01:36.449 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 217 ms
+2026-06-23 11:01:36.449 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:01:36.453 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+2026-06-23 11:01:36.453 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:01:36.456 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:01:36.456 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+2026-06-23 11:01:36.456 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:01:36.461 WARN  [main] com.gamepe.tests.VerifyOtpTest - ⚠️  Sending EMPTY OTP — expecting 400/401/422
+2026-06-23 11:01:36.463 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 11:01:36.463 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:01:36.463 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:01:36.463 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=, app_id=2, workspaceId=workspace-123}
+2026-06-23 11:01:36.716 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 11:01:36.717 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:01:36.717 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 238 ms
+2026-06-23 11:01:36.717 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:01:36.721 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+2026-06-23 11:01:36.721 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:01:36.725 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:01:36.726 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+2026-06-23 11:01:36.726 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:01:36.732 WARN  [main] com.gamepe.tests.VerifyOtpTest - ⚠️  Sending EMPTY body {{}} to verify endpoint — expecting 400/422
+2026-06-23 11:01:36.732 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 11:01:36.732 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:01:36.732 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:01:36.732 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {}
+2026-06-23 11:01:36.953 ERROR [main] com.gamepe.base.BaseTest - ❌ TEST FAILED  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+2026-06-23 11:01:36.953 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code (is <400> or is <422>) but was <405>.
+
+2026-06-23 11:01:36.953 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:01:36.967 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 11:01:36.968 INFO  [main] com.gamepe.base.BaseTest - ║       GamePe Auth API Test Suite - COMPLETE      ║
+2026-06-23 11:01:36.968 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 11:11:13.754 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:11:13.761 INFO  [main] com.gamepe.base.BaseTest - ?      GamePe Auth API Test Suite - STARTING       ?
+2026-06-23 11:11:13.769 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:11:13.769 INFO  [main] com.gamepe.base.BaseTest - ? Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 11:11:13.778 INFO  [main] com.gamepe.base.BaseTest - ? Mobile No.  : 9876543210
+2026-06-23 11:11:13.779 INFO  [main] com.gamepe.base.BaseTest - ? Correct OTP : 0000
+2026-06-23 11:11:13.779 INFO  [main] com.gamepe.base.BaseTest - ? Wrong OTP   : 1234
+2026-06-23 11:11:13.780 INFO  [main] com.gamepe.base.BaseTest - ??????????????????????????????????????????????????
+2026-06-23 11:11:16.027 INFO  [main] com.gamepe.base.BaseTest - ? RestAssured initialized successfully
+2026-06-23 11:11:16.100 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:11:16.100 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:11:16.100 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:11:16.642 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Sending OTP to mobile: 9876543210
+2026-06-23 11:11:16.643 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:11:16.644 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:11:16.644 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 11:11:16.645 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 11:11:20.572 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:11:20.572 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 11:11:20.572 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 1756 ms
+2026-06-23 11:11:20.572 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 11:11:20.572 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Verifying OTP for mobile: 9876543210
+2026-06-23 11:11:20.572 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:11:20.575 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:11:20.575 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:11:20.575 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=0000, app_id=2, workspaceId=workspace-123}
+2026-06-23 11:11:22.017 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:11:22.017 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:11:22.017 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 1422 ms
+2026-06-23 11:11:22.017 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"Something went wrong. Please try again.","data":{}}
+2026-06-23 11:11:23.680 ERROR [main] com.gamepe.base.BaseTest - ? TEST FAILED  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:11:23.680 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code <200> but was <400>.
+
+2026-06-23 11:11:23.680 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:11:23.693 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:11:23.693 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+2026-06-23 11:11:23.693 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:11:23.698 WARN  [main] com.gamepe.tests.VerifyOtpTest - ? SECURITY TEST: Verifying WRONG OTP '1234' � must NOT return 200!
+2026-06-23 11:11:23.707 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:11:23.708 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:11:23.708 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:11:23.708 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=1234, app_id=2, workspaceId=workspace-123}
+2026-06-23 11:11:24.045 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:11:24.045 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:11:24.046 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 254 ms
+2026-06-23 11:11:24.046 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:11:24.046 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Wrong OTP correctly rejected with status: 400
+2026-06-23 11:11:24.058 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+2026-06-23 11:11:24.059 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:11:24.066 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:11:24.067 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+2026-06-23 11:11:24.067 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:11:24.077 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending NON-NUMERIC OTP 'ABCD' � expecting 400/401/422
+2026-06-23 11:11:24.078 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:11:24.078 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:11:24.079 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:11:24.079 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=ABCD, app_id=2, workspaceId=workspace-123}
+2026-06-23 11:11:24.351 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:11:24.351 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:11:24.351 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 253 ms
+2026-06-23 11:11:24.351 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:11:24.360 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+2026-06-23 11:11:24.362 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:11:24.366 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:11:24.367 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+2026-06-23 11:11:24.368 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:11:24.378 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending EMPTY OTP � expecting 400/401/422
+2026-06-23 11:11:24.378 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:11:24.379 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:11:24.379 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:11:24.379 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=, app_id=2, workspaceId=workspace-123}
+2026-06-23 11:11:25.300 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:11:25.300 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:11:25.300 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 899 ms
+2026-06-23 11:11:25.300 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:11:25.304 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+2026-06-23 11:11:25.304 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:11:25.308 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:11:25.308 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+2026-06-23 11:11:25.311 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:11:25.311 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending EMPTY body {{}} to verify endpoint � expecting 400/422
+2026-06-23 11:11:25.311 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:11:25.311 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:11:25.311 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:11:25.311 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {}
+2026-06-23 11:11:25.542 ERROR [main] com.gamepe.base.BaseTest - ? TEST FAILED  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+2026-06-23 11:11:25.542 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code (is <400> or is <422>) but was <405>.
+
+2026-06-23 11:11:25.543 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:11:25.625 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:11:25.625 INFO  [main] com.gamepe.base.BaseTest - ?       GamePe Auth API Test Suite - COMPLETE      ?
+2026-06-23 11:11:25.625 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:11:56.458 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:11:56.466 INFO  [main] com.gamepe.base.BaseTest - ?      GamePe Auth API Test Suite - STARTING       ?
+2026-06-23 11:11:56.468 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:11:56.468 INFO  [main] com.gamepe.base.BaseTest - ? Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 11:11:56.468 INFO  [main] com.gamepe.base.BaseTest - ? Mobile No.  : 9876543210
+2026-06-23 11:11:56.468 INFO  [main] com.gamepe.base.BaseTest - ? Correct OTP : 0000
+2026-06-23 11:11:56.468 INFO  [main] com.gamepe.base.BaseTest - ? Wrong OTP   : 1234
+2026-06-23 11:11:56.468 INFO  [main] com.gamepe.base.BaseTest - ??????????????????????????????????????????????????
+2026-06-23 11:11:58.350 INFO  [main] com.gamepe.base.BaseTest - ? RestAssured initialized successfully
+2026-06-23 11:11:58.399 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:11:58.399 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:11:58.399 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:11:58.688 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Sending OTP to mobile: 9876543210
+2026-06-23 11:11:58.688 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:11:58.688 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:11:58.688 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 11:11:58.688 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 11:12:03.266 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:12:03.269 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 11:12:03.269 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 1819 ms
+2026-06-23 11:12:03.269 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 11:12:03.269 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Verifying OTP for mobile: 9876543210
+2026-06-23 11:12:03.269 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:12:03.269 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:12:03.269 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:12:03.269 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=0000, app_id=2, workspaceId=workspace-123}
+2026-06-23 11:12:04.083 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:12:04.083 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:12:04.083 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 777 ms
+2026-06-23 11:12:04.083 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"Something went wrong. Please try again.","data":{}}
+2026-06-23 11:12:05.849 ERROR [main] com.gamepe.base.BaseTest - ? TEST FAILED  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:12:05.849 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code <200> but was <400>.
+
+2026-06-23 11:12:05.849 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:12:05.849 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:12:05.849 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+2026-06-23 11:12:05.849 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:12:05.865 WARN  [main] com.gamepe.tests.VerifyOtpTest - ? SECURITY TEST: Verifying WRONG OTP '1234' � must NOT return 200!
+2026-06-23 11:12:05.865 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:12:05.865 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:12:05.865 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:12:05.865 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=1234, app_id=2, workspaceId=workspace-123}
+2026-06-23 11:12:06.399 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:12:06.399 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:12:06.399 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 443 ms
+2026-06-23 11:12:06.399 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:12:06.399 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Wrong OTP correctly rejected with status: 400
+2026-06-23 11:12:06.415 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+2026-06-23 11:12:06.415 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:12:06.422 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:12:06.422 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+2026-06-23 11:12:06.422 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:12:06.427 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending NON-NUMERIC OTP 'ABCD' � expecting 400/401/422
+2026-06-23 11:12:06.427 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:12:06.430 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:12:06.431 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:12:06.432 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=ABCD, app_id=2, workspaceId=workspace-123}
+2026-06-23 11:12:06.697 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:12:06.699 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:12:06.699 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 243 ms
+2026-06-23 11:12:06.699 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:12:06.699 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+2026-06-23 11:12:06.699 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:12:06.699 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:12:06.699 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+2026-06-23 11:12:06.699 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:12:06.720 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending EMPTY OTP � expecting 400/401/422
+2026-06-23 11:12:06.720 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:12:06.720 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:12:06.720 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:12:06.720 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=, app_id=2, workspaceId=workspace-123}
+2026-06-23 11:12:07.269 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:12:07.269 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:12:07.269 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 528 ms
+2026-06-23 11:12:07.269 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:12:07.274 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+2026-06-23 11:12:07.274 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:12:07.277 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:12:07.277 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+2026-06-23 11:12:07.277 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:12:07.283 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending EMPTY body {{}} to verify endpoint � expecting 400/422
+2026-06-23 11:12:07.285 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:12:07.285 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:12:07.285 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:12:07.285 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {}
+2026-06-23 11:12:07.492 ERROR [main] com.gamepe.base.BaseTest - ? TEST FAILED  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+2026-06-23 11:12:07.492 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code (is <400> or is <422>) but was <405>.
+
+2026-06-23 11:12:07.492 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:12:07.553 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:12:07.553 INFO  [main] com.gamepe.base.BaseTest - ?       GamePe Auth API Test Suite - COMPLETE      ?
+2026-06-23 11:12:07.553 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:16:27.909 INFO  [main] org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2026-06-23 11:16:27.969 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 11:16:27.969 INFO  [main] com.gamepe.base.BaseTest - ║      GamePe Auth API Test Suite - STARTING       ║
+2026-06-23 11:16:27.969 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 11:16:27.969 INFO  [main] com.gamepe.base.BaseTest - 🌐 Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 11:16:27.970 INFO  [main] com.gamepe.base.BaseTest - 📱 Mobile No.  : 9876543210
+2026-06-23 11:16:27.970 INFO  [main] com.gamepe.base.BaseTest - 🔑 Correct OTP : 0000
+2026-06-23 11:16:27.971 INFO  [main] com.gamepe.base.BaseTest - 🚫 Wrong OTP   : 1234
+2026-06-23 11:16:27.971 INFO  [main] com.gamepe.base.BaseTest - ──────────────────────────────────────────────────
+2026-06-23 11:16:28.504 INFO  [main] com.gamepe.base.BaseTest - ✅ RestAssured initialized successfully
+2026-06-23 11:16:28.521 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:16:28.522 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:16:28.522 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:16:28.701 INFO  [main] com.gamepe.tests.VerifyOtpTest - 📩 Sending OTP to mobile: 9876543210
+2026-06-23 11:16:28.701 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 11:16:28.701 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:16:28.701 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 11:16:28.702 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 11:16:36.412 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 11:16:36.413 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 11:16:36.413 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 6904 ms
+2026-06-23 11:16:36.413 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 11:16:36.413 INFO  [main] com.gamepe.tests.VerifyOtpTest - 🔑 Verifying OTP for mobile: 9876543210
+2026-06-23 11:16:36.413 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 11:16:36.414 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:16:36.414 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:16:36.414 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=0000, app_id=2, workspaceId=workspace-123}
+2026-06-23 11:16:36.839 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 11:16:36.839 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:16:36.839 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 406 ms
+2026-06-23 11:16:36.839 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"Something went wrong. Please try again.","data":{}}
+2026-06-23 11:16:37.398 ERROR [main] com.gamepe.base.BaseTest - ❌ TEST FAILED  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:16:37.398 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code <200> but was <400>.
+
+2026-06-23 11:16:37.399 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:16:37.413 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 11:16:37.414 INFO  [main] com.gamepe.base.BaseTest - ║       GamePe Auth API Test Suite - COMPLETE      ║
+2026-06-23 11:16:37.414 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 11:36:38.724 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:36:38.727 INFO  [main] com.gamepe.base.BaseTest - ?      GamePe Auth API Test Suite - STARTING       ?
+2026-06-23 11:36:38.728 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:36:38.728 INFO  [main] com.gamepe.base.BaseTest - ? Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 11:36:38.731 INFO  [main] com.gamepe.base.BaseTest - ? Mobile No.  : 9876543210
+2026-06-23 11:36:38.731 INFO  [main] com.gamepe.base.BaseTest - ? Correct OTP : 0000
+2026-06-23 11:36:38.731 INFO  [main] com.gamepe.base.BaseTest - ? Wrong OTP   : 1234
+2026-06-23 11:36:38.731 INFO  [main] com.gamepe.base.BaseTest - ??????????????????????????????????????????????????
+2026-06-23 11:36:41.277 INFO  [main] com.gamepe.base.BaseTest - ? RestAssured initialized successfully
+2026-06-23 11:36:41.332 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:36:41.334 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:36:41.335 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:36:41.879 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Sending OTP to mobile: 9876543210
+2026-06-23 11:36:41.880 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:36:41.880 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:36:41.881 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 11:36:41.881 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 11:36:47.107 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:36:47.108 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 11:36:47.108 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 1948 ms
+2026-06-23 11:36:47.108 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 11:36:47.109 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Verifying OTP for mobile: 9876543210
+2026-06-23 11:36:47.109 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:36:47.109 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:36:47.109 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:36:47.109 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=0000, app_id=2, workspaceID=workspace-123}
+2026-06-23 11:36:47.414 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:36:47.415 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:36:47.415 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 283 ms
+2026-06-23 11:36:47.416 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"Something went wrong. Please try again.","data":{}}
+2026-06-23 11:36:49.502 ERROR [main] com.gamepe.base.BaseTest - ? TEST FAILED  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:36:49.503 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code <200> but was <400>.
+
+2026-06-23 11:36:49.503 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:36:49.515 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:36:49.516 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+2026-06-23 11:36:49.517 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:36:49.532 WARN  [main] com.gamepe.tests.VerifyOtpTest - ? SECURITY TEST: Verifying WRONG OTP '1234' � must NOT return 200!
+2026-06-23 11:36:49.534 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:36:49.534 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:36:49.535 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:36:49.535 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=1234, app_id=2, workspaceID=workspace-123}
+2026-06-23 11:36:49.986 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:36:49.987 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:36:49.987 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 328 ms
+2026-06-23 11:36:49.987 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:36:49.988 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Wrong OTP correctly rejected with status: 400
+2026-06-23 11:36:49.998 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+2026-06-23 11:36:49.999 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:36:50.005 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:36:50.006 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+2026-06-23 11:36:50.006 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:36:50.014 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending NON-NUMERIC OTP 'ABCD' � expecting 400/401/422
+2026-06-23 11:36:50.015 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:36:50.016 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:36:50.016 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:36:50.016 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=ABCD, app_id=2, workspaceID=workspace-123}
+2026-06-23 11:36:50.368 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:36:50.369 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:36:50.369 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 310 ms
+2026-06-23 11:36:50.369 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:36:50.375 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+2026-06-23 11:36:50.375 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:36:50.383 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:36:50.384 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+2026-06-23 11:36:50.384 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:36:50.391 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending EMPTY OTP � expecting 400/401/422
+2026-06-23 11:36:50.393 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:36:50.394 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:36:50.394 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:36:50.394 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=, app_id=2, workspaceID=workspace-123}
+2026-06-23 11:36:50.674 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:36:50.675 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:36:50.675 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 252 ms
+2026-06-23 11:36:50.675 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:36:50.680 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+2026-06-23 11:36:50.681 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:36:50.688 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:36:50.689 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+2026-06-23 11:36:50.689 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:36:50.697 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending EMPTY body {{}} to verify endpoint � expecting 400/422
+2026-06-23 11:36:50.697 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:36:50.699 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:36:50.699 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:36:50.699 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {}
+2026-06-23 11:36:50.981 ERROR [main] com.gamepe.base.BaseTest - ? TEST FAILED  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+2026-06-23 11:36:50.982 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code (is <400> or is <422>) but was <405>.
+
+2026-06-23 11:36:50.983 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:36:51.092 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:36:51.093 INFO  [main] com.gamepe.base.BaseTest - ?       GamePe Auth API Test Suite - COMPLETE      ?
+2026-06-23 11:36:51.093 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:37:02.725 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:37:02.739 INFO  [main] com.gamepe.base.BaseTest - ?      GamePe Auth API Test Suite - STARTING       ?
+2026-06-23 11:37:02.740 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:37:02.742 INFO  [main] com.gamepe.base.BaseTest - ? Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 11:37:02.752 INFO  [main] com.gamepe.base.BaseTest - ? Mobile No.  : 9876543210
+2026-06-23 11:37:02.754 INFO  [main] com.gamepe.base.BaseTest - ? Correct OTP : 0000
+2026-06-23 11:37:02.755 INFO  [main] com.gamepe.base.BaseTest - ? Wrong OTP   : 1234
+2026-06-23 11:37:02.756 INFO  [main] com.gamepe.base.BaseTest - ??????????????????????????????????????????????????
+2026-06-23 11:37:04.702 INFO  [main] com.gamepe.base.BaseTest - ? RestAssured initialized successfully
+2026-06-23 11:37:04.750 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:04.750 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:37:04.751 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:05.296 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Sending OTP to mobile: 9876543210
+2026-06-23 11:37:05.297 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:37:05.298 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:37:05.298 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 11:37:05.299 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 11:37:11.772 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:37:11.772 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 11:37:11.772 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 1716 ms
+2026-06-23 11:37:11.772 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 11:37:11.773 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Verifying OTP for mobile: 9876543210
+2026-06-23 11:37:11.773 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:37:11.773 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:37:11.773 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:37:11.774 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=0000, app_id=2, workspaceID=workspace-123}
+2026-06-23 11:37:12.115 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:37:12.116 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:37:12.117 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 316 ms
+2026-06-23 11:37:12.117 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"Something went wrong. Please try again.","data":{}}
+2026-06-23 11:37:14.601 ERROR [main] com.gamepe.base.BaseTest - ? TEST FAILED  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:37:14.602 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code <200> but was <400>.
+
+2026-06-23 11:37:14.603 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:37:14.616 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:14.617 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+2026-06-23 11:37:14.618 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:14.633 WARN  [main] com.gamepe.tests.VerifyOtpTest - ? SECURITY TEST: Verifying WRONG OTP '1234' � must NOT return 200!
+2026-06-23 11:37:14.639 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:37:14.640 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:37:14.640 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:37:14.640 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=1234, app_id=2, workspaceID=workspace-123}
+2026-06-23 11:37:15.096 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:37:15.097 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:37:15.097 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 309 ms
+2026-06-23 11:37:15.097 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:37:15.097 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Wrong OTP correctly rejected with status: 400
+2026-06-23 11:37:15.107 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+2026-06-23 11:37:15.108 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:37:15.116 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:15.116 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+2026-06-23 11:37:15.116 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:15.129 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending NON-NUMERIC OTP 'ABCD' � expecting 400/401/422
+2026-06-23 11:37:15.132 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:37:15.136 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:37:15.140 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:37:15.140 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=ABCD, app_id=2, workspaceID=workspace-123}
+2026-06-23 11:37:15.498 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:37:15.499 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:37:15.499 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 327 ms
+2026-06-23 11:37:15.499 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:37:15.502 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+2026-06-23 11:37:15.503 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:37:15.508 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:15.508 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+2026-06-23 11:37:15.509 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:15.514 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending EMPTY OTP � expecting 400/401/422
+2026-06-23 11:37:15.515 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:37:15.515 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:37:15.515 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:37:15.515 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=, app_id=2, workspaceID=workspace-123}
+2026-06-23 11:37:15.882 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:37:15.882 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:37:15.882 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 353 ms
+2026-06-23 11:37:15.882 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:37:15.886 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+2026-06-23 11:37:15.886 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:37:15.889 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:15.890 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+2026-06-23 11:37:15.891 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:15.896 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending EMPTY body {{}} to verify endpoint � expecting 400/422
+2026-06-23 11:37:15.896 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:37:15.896 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:37:15.896 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:37:15.896 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {}
+2026-06-23 11:37:16.154 ERROR [main] com.gamepe.base.BaseTest - ? TEST FAILED  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+2026-06-23 11:37:16.154 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code (is <400> or is <422>) but was <405>.
+
+2026-06-23 11:37:16.155 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:37:16.212 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:37:16.214 INFO  [main] com.gamepe.base.BaseTest - ?       GamePe Auth API Test Suite - COMPLETE      ?
+2026-06-23 11:37:16.214 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:37:29.966 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:37:29.971 INFO  [main] com.gamepe.base.BaseTest - ?      GamePe Auth API Test Suite - STARTING       ?
+2026-06-23 11:37:29.971 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:37:29.972 INFO  [main] com.gamepe.base.BaseTest - ? Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 11:37:29.976 INFO  [main] com.gamepe.base.BaseTest - ? Mobile No.  : 9876543210
+2026-06-23 11:37:29.976 INFO  [main] com.gamepe.base.BaseTest - ? Correct OTP : 0000
+2026-06-23 11:37:29.976 INFO  [main] com.gamepe.base.BaseTest - ? Wrong OTP   : 1234
+2026-06-23 11:37:29.976 INFO  [main] com.gamepe.base.BaseTest - ??????????????????????????????????????????????????
+2026-06-23 11:37:33.016 INFO  [main] com.gamepe.base.BaseTest - ? RestAssured initialized successfully
+2026-06-23 11:37:33.091 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:33.093 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:37:33.095 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:33.582 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Sending OTP to mobile: 9876543210
+2026-06-23 11:37:33.583 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:37:33.584 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:37:33.584 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 11:37:33.585 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 11:37:39.310 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:37:39.311 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 11:37:39.312 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 2407 ms
+2026-06-23 11:37:39.312 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 11:37:39.312 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Verifying OTP for mobile: 9876543210
+2026-06-23 11:37:39.313 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:37:39.313 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:37:39.313 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:37:39.314 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=0000, app_id=2, workspaceID=workspace-123}
+2026-06-23 11:37:39.671 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:37:39.671 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:37:39.671 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 313 ms
+2026-06-23 11:37:39.672 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"Something went wrong. Please try again.","data":{}}
+2026-06-23 11:37:41.047 ERROR [main] com.gamepe.base.BaseTest - ? TEST FAILED  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:37:41.047 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code <200> but was <400>.
+
+2026-06-23 11:37:41.048 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:37:41.055 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:41.056 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+2026-06-23 11:37:41.056 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:41.062 WARN  [main] com.gamepe.tests.VerifyOtpTest - ? SECURITY TEST: Verifying WRONG OTP '1234' � must NOT return 200!
+2026-06-23 11:37:41.062 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:37:41.062 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:37:41.062 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:37:41.062 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=1234, app_id=2, workspaceID=workspace-123}
+2026-06-23 11:37:41.494 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:37:41.495 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:37:41.495 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 324 ms
+2026-06-23 11:37:41.496 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:37:41.496 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Wrong OTP correctly rejected with status: 400
+2026-06-23 11:37:41.505 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+2026-06-23 11:37:41.505 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:37:41.517 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:41.518 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+2026-06-23 11:37:41.518 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:41.532 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending NON-NUMERIC OTP 'ABCD' � expecting 400/401/422
+2026-06-23 11:37:41.533 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:37:41.534 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:37:41.534 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:37:41.535 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=ABCD, app_id=2, workspaceID=workspace-123}
+2026-06-23 11:37:41.976 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:37:41.976 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:37:41.976 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 399 ms
+2026-06-23 11:37:41.976 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:37:41.981 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+2026-06-23 11:37:41.982 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:37:41.997 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:41.998 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+2026-06-23 11:37:42.000 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:42.008 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending EMPTY OTP � expecting 400/401/422
+2026-06-23 11:37:42.009 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:37:42.009 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:37:42.009 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:37:42.009 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=, app_id=2, workspaceID=workspace-123}
+2026-06-23 11:37:42.292 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 11:37:42.292 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:37:42.292 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 261 ms
+2026-06-23 11:37:42.292 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 11:37:42.297 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+2026-06-23 11:37:42.298 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:37:42.304 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:42.305 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+2026-06-23 11:37:42.305 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 11:37:42.312 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending EMPTY body {{}} to verify endpoint � expecting 400/422
+2026-06-23 11:37:42.313 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 11:37:42.313 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:37:42.314 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:37:42.314 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {}
+2026-06-23 11:37:42.609 ERROR [main] com.gamepe.base.BaseTest - ? TEST FAILED  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+2026-06-23 11:37:42.610 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code (is <400> or is <422>) but was <405>.
+
+2026-06-23 11:37:42.610 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 11:37:42.742 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:37:42.743 INFO  [main] com.gamepe.base.BaseTest - ?       GamePe Auth API Test Suite - COMPLETE      ?
+2026-06-23 11:37:42.743 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:38:16.856 INFO  [main] org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2026-06-23 11:38:16.908 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 11:38:16.908 INFO  [main] com.gamepe.base.BaseTest - ║      GamePe Auth API Test Suite - STARTING       ║
+2026-06-23 11:38:16.908 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 11:38:16.909 INFO  [main] com.gamepe.base.BaseTest - 🌐 Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 11:38:16.909 INFO  [main] com.gamepe.base.BaseTest - 📱 Mobile No.  : 9876543210
+2026-06-23 11:38:16.909 INFO  [main] com.gamepe.base.BaseTest - 🔑 Correct OTP : 0000
+2026-06-23 11:38:16.910 INFO  [main] com.gamepe.base.BaseTest - 🚫 Wrong OTP   : 1234
+2026-06-23 11:38:16.910 INFO  [main] com.gamepe.base.BaseTest - ──────────────────────────────────────────────────
+2026-06-23 11:38:17.427 INFO  [main] com.gamepe.base.BaseTest - ✅ RestAssured initialized successfully
+2026-06-23 11:38:17.445 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:38:17.445 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:38:17.445 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:38:17.642 INFO  [main] com.gamepe.tests.VerifyOtpTest - 📩 Sending OTP to mobile: 9876543210
+2026-06-23 11:38:17.643 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 11:38:17.644 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:38:17.645 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 11:38:17.645 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 11:38:20.792 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 11:38:20.792 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 11:38:20.794 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 1362 ms
+2026-06-23 11:38:20.794 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 11:38:20.794 INFO  [main] com.gamepe.tests.VerifyOtpTest - 🔑 Verifying OTP for mobile: 9876543210
+2026-06-23 11:38:20.794 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 11:38:20.794 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:38:20.794 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:38:20.794 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=0000, app_id=2, workspaceID=workspace-123}
+2026-06-23 11:38:21.125 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 11:38:21.125 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:38:21.126 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 313 ms
+2026-06-23 11:38:21.126 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"Something went wrong. Please try again.","data":{}}
+2026-06-23 11:38:21.879 ERROR [main] com.gamepe.base.BaseTest - ❌ TEST FAILED  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:38:21.879 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code <200> but was <400>.
+
+2026-06-23 11:38:21.879 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:38:21.895 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 11:38:21.897 INFO  [main] com.gamepe.base.BaseTest - ║       GamePe Auth API Test Suite - COMPLETE      ║
+2026-06-23 11:38:21.897 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 11:40:03.202 INFO  [main] org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2026-06-23 11:40:03.262 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 11:40:03.263 INFO  [main] com.gamepe.base.BaseTest - ║      GamePe Auth API Test Suite - STARTING       ║
+2026-06-23 11:40:03.263 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 11:40:03.263 INFO  [main] com.gamepe.base.BaseTest - 🌐 Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 11:40:03.263 INFO  [main] com.gamepe.base.BaseTest - 📱 Mobile No.  : 9876543210
+2026-06-23 11:40:03.264 INFO  [main] com.gamepe.base.BaseTest - 🔑 Correct OTP : 0000
+2026-06-23 11:40:03.264 INFO  [main] com.gamepe.base.BaseTest - 🚫 Wrong OTP   : 1234
+2026-06-23 11:40:03.264 INFO  [main] com.gamepe.base.BaseTest - ──────────────────────────────────────────────────
+2026-06-23 11:40:03.829 INFO  [main] com.gamepe.base.BaseTest - ✅ RestAssured initialized successfully
+2026-06-23 11:40:03.847 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:03.849 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc01_sendOtp_validMobile_shouldReturn200
+2026-06-23 11:40:03.850 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:04.049 INFO  [main] com.gamepe.tests.SendOtpTest - 📱 Sending OTP to registered mobile: 9876543210
+2026-06-23 11:40:04.050 DEBUG [main] com.gamepe.tests.SendOtpTest - 📤 REQUEST
+2026-06-23 11:40:04.050 DEBUG [main] com.gamepe.tests.SendOtpTest -    Method : POST
+2026-06-23 11:40:04.050 DEBUG [main] com.gamepe.tests.SendOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 11:40:04.050 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 11:40:06.648 DEBUG [main] com.gamepe.tests.SendOtpTest - 📥 RESPONSE
+2026-06-23 11:40:06.648 DEBUG [main] com.gamepe.tests.SendOtpTest -    Status  : 200
+2026-06-23 11:40:06.648 DEBUG [main] com.gamepe.tests.SendOtpTest -    Time    : 923 ms
+2026-06-23 11:40:06.649 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 11:40:06.649 INFO  [main] com.gamepe.tests.SendOtpTest - ✅ OTP successfully triggered for mobile: 9876543210
+2026-06-23 11:40:06.663 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc01_sendOtp_validMobile_shouldReturn200
+2026-06-23 11:40:06.664 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:40:06.668 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:06.669 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc02_sendOtp_unregisteredMobile_shouldReturn400Or404
+2026-06-23 11:40:06.669 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:06.675 WARN  [main] com.gamepe.tests.SendOtpTest - ⚠️  Sending OTP to UNREGISTERED mobile: 0000000000 — expecting 400/404
+2026-06-23 11:40:06.675 DEBUG [main] com.gamepe.tests.SendOtpTest - 📤 REQUEST
+2026-06-23 11:40:06.677 DEBUG [main] com.gamepe.tests.SendOtpTest -    Method : POST
+2026-06-23 11:40:06.677 DEBUG [main] com.gamepe.tests.SendOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 11:40:06.677 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=0000000000, otp_hash=}
+2026-06-23 11:40:06.955 DEBUG [main] com.gamepe.tests.SendOtpTest - 📥 RESPONSE
+2026-06-23 11:40:06.955 DEBUG [main] com.gamepe.tests.SendOtpTest -    Status  : 400
+2026-06-23 11:40:06.955 DEBUG [main] com.gamepe.tests.SendOtpTest -    Time    : 254 ms
+2026-06-23 11:40:06.955 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body    : {"success":false,"message":"Failed to send OTP.","data":{}}
+2026-06-23 11:40:06.959 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc02_sendOtp_unregisteredMobile_shouldReturn400Or404
+2026-06-23 11:40:06.959 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:40:06.964 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:06.964 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc03_sendOtp_emptyMobile_shouldReturn400Or422
+2026-06-23 11:40:06.964 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:06.971 WARN  [main] com.gamepe.tests.SendOtpTest - ⚠️  Sending OTP with EMPTY mobile — expecting 400/422
+2026-06-23 11:40:06.971 DEBUG [main] com.gamepe.tests.SendOtpTest - 📤 REQUEST
+2026-06-23 11:40:06.971 DEBUG [main] com.gamepe.tests.SendOtpTest -    Method : POST
+2026-06-23 11:40:06.971 DEBUG [main] com.gamepe.tests.SendOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 11:40:06.971 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=, otp_hash=}
+2026-06-23 11:40:07.236 DEBUG [main] com.gamepe.tests.SendOtpTest - 📥 RESPONSE
+2026-06-23 11:40:07.236 DEBUG [main] com.gamepe.tests.SendOtpTest -    Status  : 400
+2026-06-23 11:40:07.236 DEBUG [main] com.gamepe.tests.SendOtpTest -    Time    : 243 ms
+2026-06-23 11:40:07.236 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body    : {"success":false,"message":"Failed to send OTP.","data":{}}
+2026-06-23 11:40:07.241 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc03_sendOtp_emptyMobile_shouldReturn400Or422
+2026-06-23 11:40:07.241 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:40:07.251 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 11:40:07.251 INFO  [main] com.gamepe.base.BaseTest - ║       GamePe Auth API Test Suite - COMPLETE      ║
+2026-06-23 11:40:07.251 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 11:40:36.098 INFO  [main] org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2026-06-23 11:40:36.197 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 11:40:36.200 INFO  [main] com.gamepe.base.BaseTest - ║      GamePe Auth API Test Suite - STARTING       ║
+2026-06-23 11:40:36.201 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 11:40:36.201 INFO  [main] com.gamepe.base.BaseTest - 🌐 Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 11:40:36.203 INFO  [main] com.gamepe.base.BaseTest - 📱 Mobile No.  : 9876543210
+2026-06-23 11:40:36.203 INFO  [main] com.gamepe.base.BaseTest - 🔑 Correct OTP : 0000
+2026-06-23 11:40:36.203 INFO  [main] com.gamepe.base.BaseTest - 🚫 Wrong OTP   : 1234
+2026-06-23 11:40:36.204 INFO  [main] com.gamepe.base.BaseTest - ──────────────────────────────────────────────────
+2026-06-23 11:40:37.021 INFO  [main] com.gamepe.base.BaseTest - ✅ RestAssured initialized successfully
+2026-06-23 11:40:37.047 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:37.047 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc01_signUp_validMobile_shouldReturn200Or201
+2026-06-23 11:40:37.048 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:37.312 DEBUG [main] com.gamepe.tests.SignUpTest - 📤 REQUEST
+2026-06-23 11:40:37.312 DEBUG [main] com.gamepe.tests.SignUpTest -    Method : POST
+2026-06-23 11:40:37.313 DEBUG [main] com.gamepe.tests.SignUpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+2026-06-23 11:40:37.313 DEBUG [main] com.gamepe.tests.SignUpTest -    Body   : {mobile_number=9876543210}
+2026-06-23 11:40:41.011 INFO  [main] com.gamepe.tests.SignUpTest - 🎯 Captured PLAYER_ID: 11254690
+2026-06-23 11:40:41.039 DEBUG [main] com.gamepe.tests.SignUpTest - 📥 RESPONSE
+2026-06-23 11:40:41.040 DEBUG [main] com.gamepe.tests.SignUpTest -    Status  : 200
+2026-06-23 11:40:41.040 DEBUG [main] com.gamepe.tests.SignUpTest -    Time    : 866 ms
+2026-06-23 11:40:41.040 DEBUG [main] com.gamepe.tests.SignUpTest -    Body    : {"success":true,"message":"Player registered successfully or already exists.","data":{"player_id":11254690,"wallet_id":9736515,"already_logged_in":true,"workspace_id":null}}
+2026-06-23 11:40:41.041 INFO  [main] com.gamepe.tests.SignUpTest - 📝 Note: 409 = user already exists (acceptable on preprod)
+2026-06-23 11:40:41.067 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc01_signUp_validMobile_shouldReturn200Or201
+2026-06-23 11:40:41.068 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:40:41.077 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:41.077 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc02_signUp_emptyMobile_shouldReturn400Or422
+2026-06-23 11:40:41.078 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:41.087 WARN  [main] com.gamepe.tests.SignUpTest - ⚠️  Sending EMPTY mobile_number — expecting 400/422
+2026-06-23 11:40:41.088 DEBUG [main] com.gamepe.tests.SignUpTest - 📤 REQUEST
+2026-06-23 11:40:41.088 DEBUG [main] com.gamepe.tests.SignUpTest -    Method : POST
+2026-06-23 11:40:41.089 DEBUG [main] com.gamepe.tests.SignUpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+2026-06-23 11:40:41.089 DEBUG [main] com.gamepe.tests.SignUpTest -    Body   : {mobile_number=}
+2026-06-23 11:40:41.442 DEBUG [main] com.gamepe.tests.SignUpTest - 📥 RESPONSE
+2026-06-23 11:40:41.443 DEBUG [main] com.gamepe.tests.SignUpTest -    Status  : 400
+2026-06-23 11:40:41.443 DEBUG [main] com.gamepe.tests.SignUpTest -    Time    : 307 ms
+2026-06-23 11:40:41.443 DEBUG [main] com.gamepe.tests.SignUpTest -    Body    : {"success":false,"message":"Phone number not valid","data":{}}
+2026-06-23 11:40:41.451 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc02_signUp_emptyMobile_shouldReturn400Or422
+2026-06-23 11:40:41.452 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:40:41.459 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:41.459 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc03_signUp_shortMobile_shouldReturn400Or422
+2026-06-23 11:40:41.460 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:41.469 WARN  [main] com.gamepe.tests.SignUpTest - ⚠️  Sending SHORT mobile '98765' — expecting 400/422
+2026-06-23 11:40:41.470 DEBUG [main] com.gamepe.tests.SignUpTest - 📤 REQUEST
+2026-06-23 11:40:41.470 DEBUG [main] com.gamepe.tests.SignUpTest -    Method : POST
+2026-06-23 11:40:41.470 DEBUG [main] com.gamepe.tests.SignUpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+2026-06-23 11:40:41.471 DEBUG [main] com.gamepe.tests.SignUpTest -    Body   : {mobile_number=98765}
+2026-06-23 11:40:41.820 DEBUG [main] com.gamepe.tests.SignUpTest - 📥 RESPONSE
+2026-06-23 11:40:41.820 DEBUG [main] com.gamepe.tests.SignUpTest -    Status  : 400
+2026-06-23 11:40:41.821 DEBUG [main] com.gamepe.tests.SignUpTest -    Time    : 309 ms
+2026-06-23 11:40:41.821 DEBUG [main] com.gamepe.tests.SignUpTest -    Body    : {"success":false,"message":"Phone number not valid","data":{}}
+2026-06-23 11:40:41.826 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc03_signUp_shortMobile_shouldReturn400Or422
+2026-06-23 11:40:41.827 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:40:41.834 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:41.836 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc04_signUp_alphaInMobile_shouldReturn400Or422
+2026-06-23 11:40:41.836 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:41.845 WARN  [main] com.gamepe.tests.SignUpTest - ⚠️  Sending ALPHA mobile '98765ABCDE' — expecting 400/422
+2026-06-23 11:40:41.845 DEBUG [main] com.gamepe.tests.SignUpTest - 📤 REQUEST
+2026-06-23 11:40:41.845 DEBUG [main] com.gamepe.tests.SignUpTest -    Method : POST
+2026-06-23 11:40:41.846 DEBUG [main] com.gamepe.tests.SignUpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+2026-06-23 11:40:41.847 DEBUG [main] com.gamepe.tests.SignUpTest -    Body   : {mobile_number=98765ABCDE}
+2026-06-23 11:40:42.219 ERROR [main] com.gamepe.base.BaseTest - ❌ TEST FAILED  : tc04_signUp_alphaInMobile_shouldReturn400Or422
+2026-06-23 11:40:42.219 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code (is <400> or is <422>) but was <200>.
+
+2026-06-23 11:40:42.219 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:40:42.225 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:42.225 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc05_signUp_emptyBody_shouldReturn400Or422
+2026-06-23 11:40:42.225 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:40:42.230 WARN  [main] com.gamepe.tests.SignUpTest - ⚠️  Sending EMPTY body {{}} — expecting 400/422
+2026-06-23 11:40:42.230 DEBUG [main] com.gamepe.tests.SignUpTest - 📤 REQUEST
+2026-06-23 11:40:42.230 DEBUG [main] com.gamepe.tests.SignUpTest -    Method : POST
+2026-06-23 11:40:42.230 DEBUG [main] com.gamepe.tests.SignUpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+2026-06-23 11:40:42.230 DEBUG [main] com.gamepe.tests.SignUpTest -    Body   : {}
+2026-06-23 11:40:42.494 DEBUG [main] com.gamepe.tests.SignUpTest - 📥 RESPONSE
+2026-06-23 11:40:42.494 DEBUG [main] com.gamepe.tests.SignUpTest -    Status  : 400
+2026-06-23 11:40:42.494 DEBUG [main] com.gamepe.tests.SignUpTest -    Time    : 252 ms
+2026-06-23 11:40:42.494 DEBUG [main] com.gamepe.tests.SignUpTest -    Body    : {"success":false,"message":"Phone number not valid","data":{}}
+2026-06-23 11:40:42.497 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc05_signUp_emptyBody_shouldReturn400Or422
+2026-06-23 11:40:42.497 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:40:42.508 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 11:40:42.508 INFO  [main] com.gamepe.base.BaseTest - ║       GamePe Auth API Test Suite - COMPLETE      ║
+2026-06-23 11:40:42.508 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 11:42:02.063 INFO  [main] org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2026-06-23 11:42:02.120 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 11:42:02.120 INFO  [main] com.gamepe.base.BaseTest - ║      GamePe Auth API Test Suite - STARTING       ║
+2026-06-23 11:42:02.120 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 11:42:02.121 INFO  [main] com.gamepe.base.BaseTest - 🌐 Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 11:42:02.121 INFO  [main] com.gamepe.base.BaseTest - 📱 Mobile No.  : 9876543210
+2026-06-23 11:42:02.121 INFO  [main] com.gamepe.base.BaseTest - 🔑 Correct OTP : 0000
+2026-06-23 11:42:02.122 INFO  [main] com.gamepe.base.BaseTest - 🚫 Wrong OTP   : 1234
+2026-06-23 11:42:02.123 INFO  [main] com.gamepe.base.BaseTest - ──────────────────────────────────────────────────
+2026-06-23 11:42:02.659 INFO  [main] com.gamepe.base.BaseTest - ✅ RestAssured initialized successfully
+2026-06-23 11:42:02.674 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:42:02.674 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:42:02.674 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 11:42:02.847 INFO  [main] com.gamepe.tests.VerifyOtpTest - 📩 Sending OTP to mobile: 9876543210
+2026-06-23 11:42:02.847 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 11:42:02.847 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:42:02.847 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 11:42:02.847 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 11:42:04.678 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 11:42:04.679 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 11:42:04.679 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 950 ms
+2026-06-23 11:42:04.679 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 11:42:04.679 INFO  [main] com.gamepe.tests.VerifyOtpTest - 🔑 Verifying OTP for mobile: 9876543210
+2026-06-23 11:42:04.680 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 11:42:04.680 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 11:42:04.680 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 11:42:04.681 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=0000, app_id=2, workspaceID=workspace-123}
+2026-06-23 11:42:04.998 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 11:42:04.998 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 11:42:04.998 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 299 ms
+2026-06-23 11:42:04.998 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"Something went wrong. Please try again.","data":{}}
+2026-06-23 11:42:05.546 ERROR [main] com.gamepe.base.BaseTest - ❌ TEST FAILED  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 11:42:05.546 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code <200> but was <400>.
+
+2026-06-23 11:42:05.546 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 11:42:05.570 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 11:42:05.571 INFO  [main] com.gamepe.base.BaseTest - ║       GamePe Auth API Test Suite - COMPLETE      ║
+2026-06-23 11:42:05.571 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 11:59:59.787 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:59:59.787 INFO  [main] com.gamepe.base.BaseTest - ?      GamePe Auth API Test Suite - STARTING       ?
+2026-06-23 11:59:59.787 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 11:59:59.787 INFO  [main] com.gamepe.base.BaseTest - ? Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 11:59:59.802 INFO  [main] com.gamepe.base.BaseTest - ? Mobile No.  : 9876543210
+2026-06-23 11:59:59.802 INFO  [main] com.gamepe.base.BaseTest - ? Correct OTP : 0000
+2026-06-23 11:59:59.802 INFO  [main] com.gamepe.base.BaseTest - ? Wrong OTP   : 1234
+2026-06-23 11:59:59.802 INFO  [main] com.gamepe.base.BaseTest - ??????????????????????????????????????????????????
+2026-06-23 12:00:01.572 INFO  [main] com.gamepe.base.BaseTest - ? RestAssured initialized successfully
+2026-06-23 12:00:01.599 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:01.599 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc01_signUp_validMobile_shouldReturn200Or201
+2026-06-23 12:00:01.599 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:01.809 DEBUG [main] com.gamepe.tests.SignUpTest - ? REQUEST
+2026-06-23 12:00:01.809 DEBUG [main] com.gamepe.tests.SignUpTest -    Method : POST
+2026-06-23 12:00:01.809 DEBUG [main] com.gamepe.tests.SignUpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+2026-06-23 12:00:01.809 DEBUG [main] com.gamepe.tests.SignUpTest -    Body   : {mobile_number=9876543210}
+2026-06-23 12:00:06.261 INFO  [main] com.gamepe.tests.SignUpTest - ? Captured PLAYER_ID: 11254690
+2026-06-23 12:00:06.339 WARN  [main] com.gamepe.tests.SignUpTest - ?? Failed to extract player_id or workspace_id: class java.lang.String cannot be cast to class [C (java.lang.String and [C are in module java.base of loader 'bootstrap')
+2026-06-23 12:00:06.339 DEBUG [main] com.gamepe.tests.SignUpTest - ? RESPONSE
+2026-06-23 12:00:06.339 DEBUG [main] com.gamepe.tests.SignUpTest -    Status  : 200
+2026-06-23 12:00:06.339 DEBUG [main] com.gamepe.tests.SignUpTest -    Time    : 1642 ms
+2026-06-23 12:00:06.339 DEBUG [main] com.gamepe.tests.SignUpTest -    Body    : {"success":true,"message":"Player registered successfully or already exists.","data":{"player_id":11254690,"wallet_id":9736515,"already_logged_in":true,"workspace_id":"62642"}}
+2026-06-23 12:00:06.339 INFO  [main] com.gamepe.tests.SignUpTest - ? Note: 409 = user already exists (acceptable on preprod)
+2026-06-23 12:00:06.383 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc01_signUp_validMobile_shouldReturn200Or201
+2026-06-23 12:00:06.384 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:06.395 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:06.396 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc02_signUp_emptyMobile_shouldReturn400Or422
+2026-06-23 12:00:06.397 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:06.404 WARN  [main] com.gamepe.tests.SignUpTest - ??  Sending EMPTY mobile_number � expecting 400/422
+2026-06-23 12:00:06.405 DEBUG [main] com.gamepe.tests.SignUpTest - ? REQUEST
+2026-06-23 12:00:06.406 DEBUG [main] com.gamepe.tests.SignUpTest -    Method : POST
+2026-06-23 12:00:06.407 DEBUG [main] com.gamepe.tests.SignUpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+2026-06-23 12:00:06.407 DEBUG [main] com.gamepe.tests.SignUpTest -    Body   : {mobile_number=}
+2026-06-23 12:00:06.714 DEBUG [main] com.gamepe.tests.SignUpTest - ? RESPONSE
+2026-06-23 12:00:06.714 DEBUG [main] com.gamepe.tests.SignUpTest -    Status  : 400
+2026-06-23 12:00:06.714 DEBUG [main] com.gamepe.tests.SignUpTest -    Time    : 272 ms
+2026-06-23 12:00:06.714 DEBUG [main] com.gamepe.tests.SignUpTest -    Body    : {"success":false,"message":"Phone number not valid","data":{}}
+2026-06-23 12:00:06.730 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc02_signUp_emptyMobile_shouldReturn400Or422
+2026-06-23 12:00:06.730 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:06.730 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:06.730 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc03_signUp_shortMobile_shouldReturn400Or422
+2026-06-23 12:00:06.730 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:06.745 WARN  [main] com.gamepe.tests.SignUpTest - ??  Sending SHORT mobile '98765' � expecting 400/422
+2026-06-23 12:00:06.749 DEBUG [main] com.gamepe.tests.SignUpTest - ? REQUEST
+2026-06-23 12:00:06.749 DEBUG [main] com.gamepe.tests.SignUpTest -    Method : POST
+2026-06-23 12:00:06.749 DEBUG [main] com.gamepe.tests.SignUpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+2026-06-23 12:00:06.750 DEBUG [main] com.gamepe.tests.SignUpTest -    Body   : {mobile_number=98765}
+2026-06-23 12:00:07.079 DEBUG [main] com.gamepe.tests.SignUpTest - ? RESPONSE
+2026-06-23 12:00:07.080 DEBUG [main] com.gamepe.tests.SignUpTest -    Status  : 400
+2026-06-23 12:00:07.080 DEBUG [main] com.gamepe.tests.SignUpTest -    Time    : 297 ms
+2026-06-23 12:00:07.080 DEBUG [main] com.gamepe.tests.SignUpTest -    Body    : {"success":false,"message":"Phone number not valid","data":{}}
+2026-06-23 12:00:07.084 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc03_signUp_shortMobile_shouldReturn400Or422
+2026-06-23 12:00:07.087 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:07.094 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:07.094 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc04_signUp_alphaInMobile_shouldReturn400Or422
+2026-06-23 12:00:07.095 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:07.105 WARN  [main] com.gamepe.tests.SignUpTest - ??  Sending ALPHA mobile '98765ABCDE' � expecting 400/422
+2026-06-23 12:00:07.107 DEBUG [main] com.gamepe.tests.SignUpTest - ? REQUEST
+2026-06-23 12:00:07.107 DEBUG [main] com.gamepe.tests.SignUpTest -    Method : POST
+2026-06-23 12:00:07.107 DEBUG [main] com.gamepe.tests.SignUpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+2026-06-23 12:00:07.107 DEBUG [main] com.gamepe.tests.SignUpTest -    Body   : {mobile_number=98765ABCDE}
+2026-06-23 12:00:07.518 ERROR [main] com.gamepe.base.BaseTest - ? TEST FAILED  : tc04_signUp_alphaInMobile_shouldReturn400Or422
+2026-06-23 12:00:07.519 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code (is <400> or is <422>) but was <200>.
+
+2026-06-23 12:00:07.520 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:07.538 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:07.540 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc05_signUp_emptyBody_shouldReturn400Or422
+2026-06-23 12:00:07.540 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:07.543 WARN  [main] com.gamepe.tests.SignUpTest - ??  Sending EMPTY body {{}} � expecting 400/422
+2026-06-23 12:00:07.543 DEBUG [main] com.gamepe.tests.SignUpTest - ? REQUEST
+2026-06-23 12:00:07.543 DEBUG [main] com.gamepe.tests.SignUpTest -    Method : POST
+2026-06-23 12:00:07.556 DEBUG [main] com.gamepe.tests.SignUpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/signup
+2026-06-23 12:00:07.556 DEBUG [main] com.gamepe.tests.SignUpTest -    Body   : {}
+2026-06-23 12:00:07.988 DEBUG [main] com.gamepe.tests.SignUpTest - ? RESPONSE
+2026-06-23 12:00:07.988 DEBUG [main] com.gamepe.tests.SignUpTest -    Status  : 400
+2026-06-23 12:00:07.988 DEBUG [main] com.gamepe.tests.SignUpTest -    Time    : 404 ms
+2026-06-23 12:00:07.988 DEBUG [main] com.gamepe.tests.SignUpTest -    Body    : {"success":false,"message":"Phone number not valid","data":{}}
+2026-06-23 12:00:07.988 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc05_signUp_emptyBody_shouldReturn400Or422
+2026-06-23 12:00:07.988 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:08.046 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 12:00:08.046 INFO  [main] com.gamepe.base.BaseTest - ?      GamePe Auth API Test Suite - STARTING       ?
+2026-06-23 12:00:08.046 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 12:00:08.046 INFO  [main] com.gamepe.base.BaseTest - ? Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 12:00:08.046 INFO  [main] com.gamepe.base.BaseTest - ? Mobile No.  : 9876543210
+2026-06-23 12:00:08.046 INFO  [main] com.gamepe.base.BaseTest - ? Correct OTP : 0000
+2026-06-23 12:00:08.046 INFO  [main] com.gamepe.base.BaseTest - ? Wrong OTP   : 1234
+2026-06-23 12:00:08.046 INFO  [main] com.gamepe.base.BaseTest - ??????????????????????????????????????????????????
+2026-06-23 12:00:08.046 INFO  [main] com.gamepe.base.BaseTest - ? RestAssured initialized successfully
+2026-06-23 12:00:08.046 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:08.046 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc01_sendOtp_validMobile_shouldReturn200
+2026-06-23 12:00:08.046 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:08.058 INFO  [main] com.gamepe.tests.SendOtpTest - ? Sending OTP to registered mobile: 9876543210
+2026-06-23 12:00:08.058 DEBUG [main] com.gamepe.tests.SendOtpTest - ? REQUEST
+2026-06-23 12:00:08.058 DEBUG [main] com.gamepe.tests.SendOtpTest -    Method : POST
+2026-06-23 12:00:08.058 DEBUG [main] com.gamepe.tests.SendOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 12:00:08.058 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 12:00:08.483 DEBUG [main] com.gamepe.tests.SendOtpTest - ? RESPONSE
+2026-06-23 12:00:08.483 DEBUG [main] com.gamepe.tests.SendOtpTest -    Status  : 200
+2026-06-23 12:00:08.483 DEBUG [main] com.gamepe.tests.SendOtpTest -    Time    : 381 ms
+2026-06-23 12:00:08.483 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 12:00:08.483 INFO  [main] com.gamepe.tests.SendOtpTest - ? OTP successfully triggered for mobile: 9876543210
+2026-06-23 12:00:08.490 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc01_sendOtp_validMobile_shouldReturn200
+2026-06-23 12:00:08.491 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:08.504 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:08.504 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc02_sendOtp_unregisteredMobile_shouldReturn400Or404
+2026-06-23 12:00:08.504 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:08.508 WARN  [main] com.gamepe.tests.SendOtpTest - ??  Sending OTP to UNREGISTERED mobile: 0000000000 � expecting 400/404
+2026-06-23 12:00:08.509 DEBUG [main] com.gamepe.tests.SendOtpTest - ? REQUEST
+2026-06-23 12:00:08.509 DEBUG [main] com.gamepe.tests.SendOtpTest -    Method : POST
+2026-06-23 12:00:08.509 DEBUG [main] com.gamepe.tests.SendOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 12:00:08.510 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=0000000000, otp_hash=}
+2026-06-23 12:00:08.803 DEBUG [main] com.gamepe.tests.SendOtpTest - ? RESPONSE
+2026-06-23 12:00:08.803 DEBUG [main] com.gamepe.tests.SendOtpTest -    Status  : 400
+2026-06-23 12:00:08.803 DEBUG [main] com.gamepe.tests.SendOtpTest -    Time    : 278 ms
+2026-06-23 12:00:08.803 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body    : {"success":false,"message":"Failed to send OTP.","data":{}}
+2026-06-23 12:00:08.808 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc02_sendOtp_unregisteredMobile_shouldReturn400Or404
+2026-06-23 12:00:08.808 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:08.810 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:08.810 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc03_sendOtp_emptyMobile_shouldReturn400Or422
+2026-06-23 12:00:08.810 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:08.810 WARN  [main] com.gamepe.tests.SendOtpTest - ??  Sending OTP with EMPTY mobile � expecting 400/422
+2026-06-23 12:00:08.810 DEBUG [main] com.gamepe.tests.SendOtpTest - ? REQUEST
+2026-06-23 12:00:08.810 DEBUG [main] com.gamepe.tests.SendOtpTest -    Method : POST
+2026-06-23 12:00:08.810 DEBUG [main] com.gamepe.tests.SendOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 12:00:08.810 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=, otp_hash=}
+2026-06-23 12:00:09.117 DEBUG [main] com.gamepe.tests.SendOtpTest - ? RESPONSE
+2026-06-23 12:00:09.117 DEBUG [main] com.gamepe.tests.SendOtpTest -    Status  : 400
+2026-06-23 12:00:09.117 DEBUG [main] com.gamepe.tests.SendOtpTest -    Time    : 285 ms
+2026-06-23 12:00:09.117 DEBUG [main] com.gamepe.tests.SendOtpTest -    Body    : {"success":false,"message":"Failed to send OTP.","data":{}}
+2026-06-23 12:00:09.117 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc03_sendOtp_emptyMobile_shouldReturn400Or422
+2026-06-23 12:00:09.117 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:09.134 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 12:00:09.134 INFO  [main] com.gamepe.base.BaseTest - ?      GamePe Auth API Test Suite - STARTING       ?
+2026-06-23 12:00:09.135 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 12:00:09.135 INFO  [main] com.gamepe.base.BaseTest - ? Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 12:00:09.135 INFO  [main] com.gamepe.base.BaseTest - ? Mobile No.  : 9876543210
+2026-06-23 12:00:09.135 INFO  [main] com.gamepe.base.BaseTest - ? Correct OTP : 0000
+2026-06-23 12:00:09.135 INFO  [main] com.gamepe.base.BaseTest - ? Wrong OTP   : 1234
+2026-06-23 12:00:09.135 INFO  [main] com.gamepe.base.BaseTest - ??????????????????????????????????????????????????
+2026-06-23 12:00:09.138 INFO  [main] com.gamepe.base.BaseTest - ? RestAssured initialized successfully
+2026-06-23 12:00:09.141 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:09.141 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 12:00:09.141 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:09.141 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Sending OTP to mobile: 9876543210
+2026-06-23 12:00:09.141 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 12:00:09.141 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 12:00:09.141 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 12:00:09.141 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 12:00:09.423 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 12:00:09.423 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 12:00:09.423 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 272 ms
+2026-06-23 12:00:09.423 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 12:00:09.423 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Verifying OTP for mobile: 9876543210
+2026-06-23 12:00:09.423 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 12:00:09.423 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 12:00:09.423 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 12:00:09.423 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=0000, app_id=2, workspaceID=workspace-123}
+2026-06-23 12:00:09.754 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 12:00:09.754 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 12:00:09.754 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 319 ms
+2026-06-23 12:00:09.754 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"Welcome to Tamasha! Enjoy your gaming experience.","data":{"player_id":11254690,"auth_token":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3ODIxOTYyMDksImV4cCI6MTc4MjI4MjYwOX0.zSC9ktWedPKzCwgsTAT2kxf9RKUEdkh9e5EfC1KD4wk","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzgyMTk2MjA5LCJleHAiOjE3ODQ3ODgyMDl9.39bUMLGQUUSJxsyZ7htmyr6dmS7hxp5bZb9BEQxZfWE","new_user":false,"freshdesk_restore_id":null,"wallet_id":9736515,"first_online_transaction":true,"recommendations":{"show_onboarding":false,"create_recommendation":false,"go_home":true},"show_referral":false}}
+2026-06-23 12:00:09.806 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Captured AUTH_TOKEN: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3ODIxOTYyMDksImV4cCI6MTc4MjI4MjYwOX0.zSC9ktWedPKzCwgsTAT2kxf9RKUEdkh9e5EfC1KD4wk
+2026-06-23 12:00:09.806 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 12:00:09.806 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 12:00:09.806 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 319 ms
+2026-06-23 12:00:09.806 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"Welcome to Tamasha! Enjoy your gaming experience.","data":{"player_id":11254690,"auth_token":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3ODIxOTYyMDksImV4cCI6MTc4MjI4MjYwOX0.zSC9ktWedPKzCwgsTAT2kxf9RKUEdkh9e5EfC1KD4wk","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzgyMTk2MjA5LCJleHAiOjE3ODQ3ODgyMDl9.39bUMLGQUUSJxsyZ7htmyr6dmS7hxp5bZb9BEQxZfWE","new_user":false,"freshdesk_restore_id":null,"wallet_id":9736515,"first_online_transaction":true,"recommendations":{"show_onboarding":false,"create_recommendation":false,"go_home":true},"show_referral":false}}
+2026-06-23 12:00:09.806 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Correct OTP verified successfully
+2026-06-23 12:00:09.816 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 12:00:09.816 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:09.823 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:09.823 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+2026-06-23 12:00:09.823 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:09.830 WARN  [main] com.gamepe.tests.VerifyOtpTest - ? SECURITY TEST: Verifying WRONG OTP '1234' � must NOT return 200!
+2026-06-23 12:00:09.831 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 12:00:09.831 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 12:00:09.831 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 12:00:09.831 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=1234, app_id=2, workspaceID=workspace-123}
+2026-06-23 12:00:10.094 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 12:00:10.094 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 12:00:10.094 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 243 ms
+2026-06-23 12:00:10.094 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 12:00:10.094 INFO  [main] com.gamepe.tests.VerifyOtpTest - ? Wrong OTP correctly rejected with status: 400
+2026-06-23 12:00:10.098 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc02_verifyOtp_wrongOtp_shouldNotReturn200
+2026-06-23 12:00:10.098 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:10.098 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:10.098 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+2026-06-23 12:00:10.098 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:10.106 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending NON-NUMERIC OTP 'ABCD' � expecting 400/401/422
+2026-06-23 12:00:10.107 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 12:00:10.107 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 12:00:10.107 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 12:00:10.107 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=ABCD, app_id=2, workspaceID=workspace-123}
+2026-06-23 12:00:10.336 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 12:00:10.336 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 12:00:10.336 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 221 ms
+2026-06-23 12:00:10.336 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 12:00:10.336 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc03_verifyOtp_nonNumericOtp_shouldReturn400Or422
+2026-06-23 12:00:10.336 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:10.346 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:10.346 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+2026-06-23 12:00:10.346 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:10.350 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending EMPTY OTP � expecting 400/401/422
+2026-06-23 12:00:10.351 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 12:00:10.351 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 12:00:10.351 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 12:00:10.351 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=, app_id=2, workspaceID=workspace-123}
+2026-06-23 12:00:10.623 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? RESPONSE
+2026-06-23 12:00:10.624 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 400
+2026-06-23 12:00:10.624 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 259 ms
+2026-06-23 12:00:10.624 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":false,"message":"OTP invalid","data":{}}
+2026-06-23 12:00:10.626 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc04_verifyOtp_emptyOtp_shouldReturn400Or422
+2026-06-23 12:00:10.627 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:10.630 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:10.630 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+2026-06-23 12:00:10.630 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:10.633 WARN  [main] com.gamepe.tests.VerifyOtpTest - ??  Sending EMPTY body {{}} to verify endpoint � expecting 400/422
+2026-06-23 12:00:10.633 DEBUG [main] com.gamepe.tests.VerifyOtpTest - ? REQUEST
+2026-06-23 12:00:10.633 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 12:00:10.634 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 12:00:10.634 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {}
+2026-06-23 12:00:10.857 ERROR [main] com.gamepe.base.BaseTest - ? TEST FAILED  : tc05_verifyOtp_emptyBody_shouldReturn400Or422
+2026-06-23 12:00:10.857 ERROR [main] com.gamepe.base.BaseTest -    Reason       : 1 expectation failed.
+Expected status code (is <400> or is <422>) but was <405>.
+
+2026-06-23 12:00:10.857 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:10.873 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 12:00:10.873 INFO  [main] com.gamepe.base.BaseTest - ?      GamePe Auth API Test Suite - STARTING       ?
+2026-06-23 12:00:10.873 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 12:00:10.873 INFO  [main] com.gamepe.base.BaseTest - ? Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 12:00:10.873 INFO  [main] com.gamepe.base.BaseTest - ? Mobile No.  : 9876543210
+2026-06-23 12:00:10.873 INFO  [main] com.gamepe.base.BaseTest - ? Correct OTP : 0000
+2026-06-23 12:00:10.873 INFO  [main] com.gamepe.base.BaseTest - ? Wrong OTP   : 1234
+2026-06-23 12:00:10.874 INFO  [main] com.gamepe.base.BaseTest - ??????????????????????????????????????????????????
+2026-06-23 12:00:10.876 INFO  [main] com.gamepe.base.BaseTest - ? RestAssured initialized successfully
+2026-06-23 12:00:10.877 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:10.877 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc01_resendOtp_validMobile_shouldReturn200Or429
+2026-06-23 12:00:10.877 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:10.881 INFO  [main] com.gamepe.tests.ResendOtpTest - ? Resending OTP to mobile: 9876543210
+2026-06-23 12:00:10.882 DEBUG [main] com.gamepe.tests.ResendOtpTest - ? REQUEST
+2026-06-23 12:00:10.882 DEBUG [main] com.gamepe.tests.ResendOtpTest -    Method : POST
+2026-06-23 12:00:10.882 DEBUG [main] com.gamepe.tests.ResendOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/resend
+2026-06-23 12:00:10.882 DEBUG [main] com.gamepe.tests.ResendOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 12:00:11.199 DEBUG [main] com.gamepe.tests.ResendOtpTest - ? RESPONSE
+2026-06-23 12:00:11.199 DEBUG [main] com.gamepe.tests.ResendOtpTest -    Status  : 200
+2026-06-23 12:00:11.199 DEBUG [main] com.gamepe.tests.ResendOtpTest -    Time    : 310 ms
+2026-06-23 12:00:11.199 DEBUG [main] com.gamepe.tests.ResendOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 12:00:11.199 INFO  [main] com.gamepe.tests.ResendOtpTest - ? OTP resent successfully
+2026-06-23 12:00:11.199 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc01_resendOtp_validMobile_shouldReturn200Or429
+2026-06-23 12:00:11.199 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:11.208 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:11.208 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc02_resendOtp_unregisteredMobile_shouldReturn400Or404
+2026-06-23 12:00:11.208 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:11.212 WARN  [main] com.gamepe.tests.ResendOtpTest - ??  Resend to UNREGISTERED mobile: 0000000000 � expecting 400/404
+2026-06-23 12:00:11.214 DEBUG [main] com.gamepe.tests.ResendOtpTest - ? REQUEST
+2026-06-23 12:00:11.214 DEBUG [main] com.gamepe.tests.ResendOtpTest -    Method : POST
+2026-06-23 12:00:11.214 DEBUG [main] com.gamepe.tests.ResendOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/resend
+2026-06-23 12:00:11.214 DEBUG [main] com.gamepe.tests.ResendOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=0000000000, otp_hash=}
+2026-06-23 12:00:11.464 DEBUG [main] com.gamepe.tests.ResendOtpTest - ? RESPONSE
+2026-06-23 12:00:11.464 DEBUG [main] com.gamepe.tests.ResendOtpTest -    Status  : 400
+2026-06-23 12:00:11.464 DEBUG [main] com.gamepe.tests.ResendOtpTest -    Time    : 240 ms
+2026-06-23 12:00:11.464 DEBUG [main] com.gamepe.tests.ResendOtpTest -    Body    : {"success":false,"message":"Failed to send OTP.","data":{}}
+2026-06-23 12:00:11.482 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc02_resendOtp_unregisteredMobile_shouldReturn400Or404
+2026-06-23 12:00:11.482 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:11.483 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:11.483 INFO  [main] com.gamepe.base.BaseTest - ?  TEST START  : tc03_resendOtp_emptyMobile_shouldReturn400Or422
+2026-06-23 12:00:11.483 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????
+2026-06-23 12:00:11.483 WARN  [main] com.gamepe.tests.ResendOtpTest - ??  Resend with EMPTY mobile � expecting 400/422
+2026-06-23 12:00:11.491 DEBUG [main] com.gamepe.tests.ResendOtpTest - ? REQUEST
+2026-06-23 12:00:11.491 DEBUG [main] com.gamepe.tests.ResendOtpTest -    Method : POST
+2026-06-23 12:00:11.491 DEBUG [main] com.gamepe.tests.ResendOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/resend
+2026-06-23 12:00:11.491 DEBUG [main] com.gamepe.tests.ResendOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=, otp_hash=}
+2026-06-23 12:00:11.746 DEBUG [main] com.gamepe.tests.ResendOtpTest - ? RESPONSE
+2026-06-23 12:00:11.746 DEBUG [main] com.gamepe.tests.ResendOtpTest -    Status  : 400
+2026-06-23 12:00:11.746 DEBUG [main] com.gamepe.tests.ResendOtpTest -    Time    : 235 ms
+2026-06-23 12:00:11.746 DEBUG [main] com.gamepe.tests.ResendOtpTest -    Body    : {"success":false,"message":"Failed to send OTP.","data":{}}
+2026-06-23 12:00:11.751 INFO  [main] com.gamepe.base.BaseTest - ? TEST PASSED  : tc03_resendOtp_emptyMobile_shouldReturn400Or422
+2026-06-23 12:00:11.751 INFO  [main] com.gamepe.base.BaseTest - ?????????????????????????????????????????????????
+2026-06-23 12:00:11.756 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 12:00:11.756 INFO  [main] com.gamepe.base.BaseTest - ?       GamePe Auth API Test Suite - COMPLETE      ?
+2026-06-23 12:00:11.756 INFO  [main] com.gamepe.base.BaseTest - ????????????????????????????????????????????????????
+2026-06-23 12:00:41.174 INFO  [main] org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2026-06-23 12:00:41.232 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 12:00:41.233 INFO  [main] com.gamepe.base.BaseTest - ║      GamePe Auth API Test Suite - STARTING       ║
+2026-06-23 12:00:41.233 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 12:00:41.233 INFO  [main] com.gamepe.base.BaseTest - 🌐 Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 12:00:41.235 INFO  [main] com.gamepe.base.BaseTest - 📱 Mobile No.  : 9876543210
+2026-06-23 12:00:41.235 INFO  [main] com.gamepe.base.BaseTest - 🔑 Correct OTP : 0000
+2026-06-23 12:00:41.235 INFO  [main] com.gamepe.base.BaseTest - 🚫 Wrong OTP   : 1234
+2026-06-23 12:00:41.235 INFO  [main] com.gamepe.base.BaseTest - ──────────────────────────────────────────────────
+2026-06-23 12:00:41.781 INFO  [main] com.gamepe.base.BaseTest - ✅ RestAssured initialized successfully
+2026-06-23 12:00:41.796 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 12:00:41.796 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 12:00:41.796 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 12:00:41.987 INFO  [main] com.gamepe.tests.VerifyOtpTest - 📩 Sending OTP to mobile: 9876543210
+2026-06-23 12:00:41.987 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 12:00:41.987 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 12:00:41.987 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 12:00:41.987 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 12:00:43.791 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 12:00:43.792 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 12:00:43.792 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 904 ms
+2026-06-23 12:00:43.792 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 12:00:43.792 INFO  [main] com.gamepe.tests.VerifyOtpTest - 🔑 Verifying OTP for mobile: 9876543210
+2026-06-23 12:00:43.792 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 12:00:43.792 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 12:00:43.793 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 12:00:43.793 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=0000, app_id=2, workspaceID=workspace-123}
+2026-06-23 12:00:44.122 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 12:00:44.122 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 12:00:44.122 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 306 ms
+2026-06-23 12:00:44.123 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"Welcome to Tamasha! Enjoy your gaming experience.","data":{"player_id":11254690,"auth_token":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3ODIxOTYyNDMsImV4cCI6MTc4MjI4MjY0M30.Mw8S09B5EHfzC6FzMIi3jElqFXyAZKKvRa_6_YUPlHU","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzgyMTk2MjQzLCJleHAiOjE3ODQ3ODgyNDN9.tdhValeIFMXvATHtG_x5OIBR52TyR_CQ9m3Vyceb7kQ","new_user":false,"freshdesk_restore_id":null,"wallet_id":9736515,"first_online_transaction":true,"recommendations":{"show_onboarding":false,"create_recommendation":false,"go_home":true},"show_referral":false}}
+2026-06-23 12:00:44.729 INFO  [main] com.gamepe.tests.VerifyOtpTest - 🔐 Captured AUTH_TOKEN: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3ODIxOTYyNDMsImV4cCI6MTc4MjI4MjY0M30.Mw8S09B5EHfzC6FzMIi3jElqFXyAZKKvRa_6_YUPlHU
+2026-06-23 12:00:44.730 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 12:00:44.730 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 12:00:44.731 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 306 ms
+2026-06-23 12:00:44.731 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"Welcome to Tamasha! Enjoy your gaming experience.","data":{"player_id":11254690,"auth_token":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3ODIxOTYyNDMsImV4cCI6MTc4MjI4MjY0M30.Mw8S09B5EHfzC6FzMIi3jElqFXyAZKKvRa_6_YUPlHU","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzgyMTk2MjQzLCJleHAiOjE3ODQ3ODgyNDN9.tdhValeIFMXvATHtG_x5OIBR52TyR_CQ9m3Vyceb7kQ","new_user":false,"freshdesk_restore_id":null,"wallet_id":9736515,"first_online_transaction":true,"recommendations":{"show_onboarding":false,"create_recommendation":false,"go_home":true},"show_referral":false}}
+2026-06-23 12:00:44.731 INFO  [main] com.gamepe.tests.VerifyOtpTest - ✅ Correct OTP verified successfully
+2026-06-23 12:00:44.750 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 12:00:44.750 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 12:00:44.767 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 12:00:44.768 INFO  [main] com.gamepe.base.BaseTest - ║       GamePe Auth API Test Suite - COMPLETE      ║
+2026-06-23 12:00:44.768 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 12:01:05.982 INFO  [main] org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+2026-06-23 12:01:06.044 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 12:01:06.045 INFO  [main] com.gamepe.base.BaseTest - ║      GamePe Auth API Test Suite - STARTING       ║
+2026-06-23 12:01:06.045 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝
+2026-06-23 12:01:06.045 INFO  [main] com.gamepe.base.BaseTest - 🌐 Base URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app
+2026-06-23 12:01:06.046 INFO  [main] com.gamepe.base.BaseTest - 📱 Mobile No.  : 9876543210
+2026-06-23 12:01:06.046 INFO  [main] com.gamepe.base.BaseTest - 🔑 Correct OTP : 0000
+2026-06-23 12:01:06.047 INFO  [main] com.gamepe.base.BaseTest - 🚫 Wrong OTP   : 1234
+2026-06-23 12:01:06.047 INFO  [main] com.gamepe.base.BaseTest - ──────────────────────────────────────────────────
+2026-06-23 12:01:06.568 INFO  [main] com.gamepe.base.BaseTest - ✅ RestAssured initialized successfully
+2026-06-23 12:01:06.586 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 12:01:06.586 INFO  [main] com.gamepe.base.BaseTest - ▶  TEST START  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 12:01:06.586 INFO  [main] com.gamepe.base.BaseTest - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-06-23 12:01:06.777 INFO  [main] com.gamepe.tests.VerifyOtpTest - 📩 Sending OTP to mobile: 9876543210
+2026-06-23 12:01:06.777 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 12:01:06.777 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 12:01:06.777 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/send
+2026-06-23 12:01:06.777 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, web_login=, mobile_number=9876543210, otp_hash=}
+2026-06-23 12:01:08.467 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 12:01:08.467 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 12:01:08.467 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 870 ms
+2026-06-23 12:01:08.467 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"OTP sent successfully.","data":{}}
+2026-06-23 12:01:08.467 INFO  [main] com.gamepe.tests.VerifyOtpTest - 🔑 Verifying OTP for mobile: 9876543210
+2026-06-23 12:01:08.467 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📤 REQUEST
+2026-06-23 12:01:08.468 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Method : POST
+2026-06-23 12:01:08.468 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    URL    : https://pre-prod-gamepe-backend-auth-core-apis-36251886398.asia-south1.run.app/auth/otp/verify
+2026-06-23 12:01:08.468 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body   : {player_id=11254690, device_id=30685769ebafdd1a, mobile_number=9876543210, client_otp=0000, app_id=2, workspaceID=workspace-123}
+2026-06-23 12:01:08.763 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 12:01:08.763 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 12:01:08.763 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 273 ms
+2026-06-23 12:01:08.763 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"Welcome to Tamasha! Enjoy your gaming experience.","data":{"player_id":11254690,"auth_token":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3ODIxOTYyNjgsImV4cCI6MTc4MjI4MjY2OH0.7LOmR-PvewDxEIVHmxTDiMqYQs_u6nc1wul93qatITY","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzgyMTk2MjY4LCJleHAiOjE3ODQ3ODgyNjh9.T06sr-mv0M6VBliuJSjBm2F_V18r52ZA8bsRMNtlPzo","new_user":false,"freshdesk_restore_id":null,"wallet_id":9736515,"first_online_transaction":true,"recommendations":{"show_onboarding":false,"create_recommendation":false,"go_home":true},"show_referral":false}}
+2026-06-23 12:01:09.336 INFO  [main] com.gamepe.tests.VerifyOtpTest - 🔐 Captured AUTH_TOKEN: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3ODIxOTYyNjgsImV4cCI6MTc4MjI4MjY2OH0.7LOmR-PvewDxEIVHmxTDiMqYQs_u6nc1wul93qatITY
+2026-06-23 12:01:09.337 DEBUG [main] com.gamepe.tests.VerifyOtpTest - 📥 RESPONSE
+2026-06-23 12:01:09.337 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Status  : 200
+2026-06-23 12:01:09.337 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Time    : 273 ms
+2026-06-23 12:01:09.337 DEBUG [main] com.gamepe.tests.VerifyOtpTest -    Body    : {"success":true,"message":"Welcome to Tamasha! Enjoy your gaming experience.","data":{"player_id":11254690,"auth_token":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3ODIxOTYyNjgsImV4cCI6MTc4MjI4MjY2OH0.7LOmR-PvewDxEIVHmxTDiMqYQs_u6nc1wul93qatITY","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyNTQ2OTAsInVzZXJuYW1lIjoiMzIyMzQwMjMiLCJuYW1lIjoiS3Jha2VuNDkwIiwiZW1haWwiOm51bGwsInJvbGUiOiJwbGF5ZXIiLCJwaG90byI6Imh0dHBzOi8vbWVkaWFjZG4udGFtYXNoYS5saXZlL05FV19TSUdOVVBfQVZUQVJfSU1BR0VTL2k4LnBuZyIsImFwcElkIjoiMiIsImRldmljZUlkIjoiMzA2ODU3NjllYmFmZGQxYSIsInBhcnRuZXJJZCI6MSwid29ya3NwYWNlSWQiOiI2MjY0MiIsImFwcFZlcnNpb24iOiIzMDAiLCJsb2dpbk1ldGhvZCI6InBob25lIiwiYmxvY2tGaW5nZXJwcmludCI6W10sInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzgyMTk2MjY4LCJleHAiOjE3ODQ3ODgyNjh9.T06sr-mv0M6VBliuJSjBm2F_V18r52ZA8bsRMNtlPzo","new_user":false,"freshdesk_restore_id":null,"wallet_id":9736515,"first_online_transaction":true,"recommendations":{"show_onboarding":false,"create_recommendation":false,"go_home":true},"show_referral":false}}
+2026-06-23 12:01:09.337 INFO  [main] com.gamepe.tests.VerifyOtpTest - ✅ Correct OTP verified successfully
+2026-06-23 12:01:09.350 INFO  [main] com.gamepe.base.BaseTest - ✅ TEST PASSED  : tc01_verifyOtp_correctOtp_shouldReturn200
+2026-06-23 12:01:09.350 INFO  [main] com.gamepe.base.BaseTest - ─────────────────────────────────────────────────
+2026-06-23 12:01:09.360 INFO  [main] com.gamepe.base.BaseTest - ╔══════════════════════════════════════════════════╗
+2026-06-23 12:01:09.360 INFO  [main] com.gamepe.base.BaseTest - ║       GamePe Auth API Test Suite - COMPLETE      ║
+2026-06-23 12:01:09.361 INFO  [main] com.gamepe.base.BaseTest - ╚══════════════════════════════════════════════════╝

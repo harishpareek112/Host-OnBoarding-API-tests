@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GamePe Auth API Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Sign Up Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.gamepe.tests.SignUpTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="afterEachTest"/>
+          <include name="setUp"/>
+          <include name="beforeEachTest"/>
+          <include name="tc04_signUp_alphaInMobile_shouldReturn400Or422"/>
+        </methods>
+      </class> <!-- com.gamepe.tests.SignUpTest -->
+    </classes>
+  </test> <!-- Sign Up Tests(failed) -->
+  <test thread-count="5" name="Verify OTP Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.gamepe.tests.VerifyOtpTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tc05_verifyOtp_emptyBody_shouldReturn400Or422"/>
+          <include name="afterEachTest"/>
+          <include name="setUp"/>
+          <include name="beforeEachTest"/>
+        </methods>
+      </class> <!-- com.gamepe.tests.VerifyOtpTest -->
+    </classes>
+  </test> <!-- Verify OTP Tests(failed) -->
+</suite> <!-- Failed suite [GamePe Auth API Test Suite] -->
